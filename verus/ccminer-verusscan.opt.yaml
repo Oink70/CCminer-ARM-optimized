@@ -1,0 +1,5302 @@
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 64, Column: 3 }
+Function:        _Z11GenNewCLKeyPhP11__Int64x2_t
+Args:
+  - Callee:          haraka256_port
+  - String:          ' will not be inlined into '
+  - Caller:          _Z11GenNewCLKeyPhP11__Int64x2_t
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 56, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 64, Column: 3 }
+Function:        _Z11GenNewCLKeyPhP11__Int64x2_t
+Args:
+  - Callee:          haraka256_port
+  - String:          ' will not be inlined into '
+  - Caller:          _Z11GenNewCLKeyPhP11__Int64x2_t
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 56, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: '/usr/lib/gcc/aarch64-linux-gnu/10/../../../../include/c++/10/bits/stl_algobase.h', 
+                   Line: 873, Column: 13 }
+Function:        _ZSt9__fill_a1IPhiEN9__gnu_cxx11__enable_ifIXsr11__is_scalarIT0_EE7__valueEvE6__typeET_S6_RKS3_
+Args:
+  - String:          'hoisting '
+  - Inst:            trunc
+    DebugLoc:        { File: '/usr/lib/gcc/aarch64-linux-gnu/10/../../../../include/c++/10/bits/stl_algobase.h', 
+                       Line: 873, Column: 13 }
+...
+--- !Passed
+Pass:            loop-idiom
+Name:            ProcessLoopStridedStore
+DebugLoc:        { File: '/usr/lib/gcc/aarch64-linux-gnu/10/../../../../include/c++/10/bits/stl_algobase.h', 
+                   Line: 873, Column: 11 }
+Function:        _ZSt9__fill_a1IPhiEN9__gnu_cxx11__enable_ifIXsr11__is_scalarIT0_EE7__valueEvE6__typeET_S6_RKS3_
+Args:
+  - String:          'Transformed loop-strided store in '
+  - Function:        _ZSt9__fill_a1IPhiEN9__gnu_cxx11__enable_ifIXsr11__is_scalarIT0_EE7__valueEvE6__typeET_S6_RKS3_
+    DebugLoc:        { File: '/usr/lib/gcc/aarch64-linux-gnu/10/../../../../include/c++/10/bits/stl_algobase.h', 
+                       Line: 870, Column: 0 }
+  - String:          ' function into a call to '
+  - NewFunction:     llvm.memset.p0i8.i64
+  - String:          '() intrinsic'
+...
+--- !Passed
+Pass:            loop-delete
+Name:            Invariant
+DebugLoc:        { File: '/usr/lib/gcc/aarch64-linux-gnu/10/../../../../include/c++/10/bits/stl_algobase.h', 
+                   Line: 872, Column: 7 }
+Function:        _ZSt9__fill_a1IPhiEN9__gnu_cxx11__enable_ifIXsr11__is_scalarIT0_EE7__valueEvE6__typeET_S6_RKS3_
+Args:
+  - String:          Loop deleted because it is invariant
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: '/usr/lib/gcc/aarch64-linux-gnu/10/../../../../include/c++/10/bits/stl_algobase.h', 
+                   Line: 914, Column: 7 }
+Function:        _ZSt8__fill_aIPhiEvT_S1_RKT0_
+Args:
+  - String:          ''''
+  - Callee:          _ZSt9__fill_a1IPhiEN9__gnu_cxx11__enable_ifIXsr11__is_scalarIT0_EE7__valueEvE6__typeET_S6_RKS3_
+    DebugLoc:        { File: '/usr/lib/gcc/aarch64-linux-gnu/10/../../../../include/c++/10/bits/stl_algobase.h', 
+                       Line: 870, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZSt8__fill_aIPhiEvT_S1_RKT0_
+    DebugLoc:        { File: '/usr/lib/gcc/aarch64-linux-gnu/10/../../../../include/c++/10/bits/stl_algobase.h', 
+                       Line: 914, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-20'
+  - String:          ', threshold='
+  - Threshold:       '325'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '__fill_a<unsigned char *, int>'
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '7'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: '/usr/lib/gcc/aarch64-linux-gnu/10/../../../../include/c++/10/bits/stl_algobase.h', 
+                   Line: 944, Column: 7 }
+Function:        _ZSt4fillIPhiEvT_S1_RKT0_
+Args:
+  - String:          ''''
+  - Callee:          _ZSt8__fill_aIPhiEvT_S1_RKT0_
+    DebugLoc:        { File: '/usr/lib/gcc/aarch64-linux-gnu/10/../../../../include/c++/10/bits/stl_algobase.h', 
+                       Line: 914, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _ZSt4fillIPhiEvT_S1_RKT0_
+    DebugLoc:        { File: '/usr/lib/gcc/aarch64-linux-gnu/10/../../../../include/c++/10/bits/stl_algobase.h', 
+                       Line: 938, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-20'
+  - String:          ', threshold='
+  - Threshold:       '325'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          'fill<unsigned char *, int>'
+  - String:          ':'
+  - Line:            '7'
+  - String:          ':'
+  - Column:          '7'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 115, Column: 2 }
+Function:        VerusHashHalf
+Args:
+  - Callee:          load_constants_port
+  - String:          ' will not be inlined into '
+  - Caller:          VerusHashHalf
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 103, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 125, Column: 4 }
+Function:        VerusHashHalf
+Args:
+  - Callee:          haraka512_port
+  - String:          ' will not be inlined into '
+  - Caller:          VerusHashHalf
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 103, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 115, Column: 2 }
+Function:        VerusHashHalf
+Args:
+  - Callee:          load_constants_port
+  - String:          ' will not be inlined into '
+  - Caller:          VerusHashHalf
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 103, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 125, Column: 4 }
+Function:        VerusHashHalf
+Args:
+  - Callee:          haraka512_port
+  - String:          ' will not be inlined into '
+  - Caller:          VerusHashHalf
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 103, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 111, Column: 2 }
+Function:        VerusHashHalf
+Args:
+  - String:          ''''
+  - Callee:          _ZSt4fillIPhiEvT_S1_RKT0_
+    DebugLoc:        { File: '/usr/lib/gcc/aarch64-linux-gnu/10/../../../../include/c++/10/bits/stl_algobase.h', 
+                       Line: 938, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          VerusHashHalf
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 103, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-40'
+  - String:          ', threshold='
+  - Threshold:       '487'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          VerusHashHalf
+  - String:          ':'
+  - Line:            '9'
+  - String:          ':'
+  - Column:          '2'
+  - String:          ';'
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 136, Column: 10 }
+Function:        VerusHashHalf
+Args:
+  - String:          'hoisting '
+  - Inst:            trunc
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 136, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 141, Column: 2 }
+Function:        VerusHashHalf
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 134, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 141, Column: 2 }
+Function:        VerusHashHalf
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 125, Column: 4 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadPRE
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 141, Column: 2 }
+Function:        VerusHashHalf
+Args:
+  - String:          load eliminated by PRE
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 141, Column: 2 }
+Function:        VerusHashHalf
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 134, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 141, Column: 2 }
+Function:        VerusHashHalf
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 125, Column: 4 }
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            FullyUnrolled
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 82, Column: 2 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'completely unrolled loop with '
+  - UnrollCount:     '32'
+  - String:          ' iterations'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 171, Column: 17 }
+Function:        Verus2hash
+Args:
+  - Callee:          _Z19verusclhash_port2_2PvPKhmPjS2_
+  - String:          ' will not be inlined into '
+  - Caller:          Verus2hash
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 151, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+Function:        Verus2hash
+Args:
+  - Callee:          haraka512_keyed
+  - String:          ' will not be inlined into '
+  - Caller:          Verus2hash
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 151, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 171, Column: 17 }
+Function:        Verus2hash
+Args:
+  - Callee:          _Z19verusclhash_port2_2PvPKhmPjS2_
+  - String:          ' will not be inlined into '
+  - Caller:          Verus2hash
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 151, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+Function:        Verus2hash
+Args:
+  - Callee:          haraka512_keyed
+  - String:          ' will not be inlined into '
+  - Caller:          Verus2hash
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 151, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 154, Column: 3 }
+Function:        Verus2hash
+Args:
+  - String:          ''''
+  - Callee:          _Z11GenNewCLKeyPhP11__Int64x2_t
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 56, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          Verus2hash
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 151, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '15'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          Verus2hash
+  - String:          ':'
+  - Line:            '5'
+  - String:          ':'
+  - Column:          '3'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 187, Column: 2 }
+Function:        Verus2hash
+Args:
+  - String:          ''''
+  - Callee:          _Z6FixKeyPjS_P11__Int64x2_tS1_
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 79, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          Verus2hash
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 151, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '910'
+  - String:          ', threshold='
+  - Threshold:       '731'
+  - String:          ')'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 160, Column: 2 }
+Function:        Verus2hash
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 156, Column: 15 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 173, Column: 31 }
+Function:        Verus2hash
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 171, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 174, Column: 31 }
+Function:        Verus2hash
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 171, Column: 17 }
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 237, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - Callee:          gettimeofday
+  - String:          ' will not be inlined into '
+  - Caller:          scanhash_verus
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 195, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 254, Column: 4 }
+Function:        scanhash_verus
+Args:
+  - Callee:          bn_store_hash_target_ratio
+  - String:          ' will not be inlined into '
+  - Caller:          scanhash_verus
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 195, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 272, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - Callee:          gettimeofday
+  - String:          ' will not be inlined into '
+  - Caller:          scanhash_verus
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 195, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 273, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - Callee:          timeval_subtract
+  - String:          ' will not be inlined into '
+  - Caller:          scanhash_verus
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 195, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 237, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - Callee:          gettimeofday
+  - String:          ' will not be inlined into '
+  - Caller:          scanhash_verus
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 195, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 254, Column: 4 }
+Function:        scanhash_verus
+Args:
+  - Callee:          bn_store_hash_target_ratio
+  - String:          ' will not be inlined into '
+  - Caller:          scanhash_verus
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 195, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 272, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - Callee:          gettimeofday
+  - String:          ' will not be inlined into '
+  - Caller:          scanhash_verus
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 195, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 273, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - Callee:          timeval_subtract
+  - String:          ' will not be inlined into '
+  - Caller:          scanhash_verus
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 195, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 233, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          ''''
+  - Callee:          VerusHashHalf
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 103, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          scanhash_verus
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 195, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '125'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          scanhash_verus
+  - String:          ':'
+  - Line:            '39'
+  - String:          ':'
+  - Column:          '2'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 234, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          ''''
+  - Callee:          _Z11GenNewCLKeyPhP11__Int64x2_t
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 56, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          scanhash_verus
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 195, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '15'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          scanhash_verus
+  - String:          ':'
+  - Line:            '40'
+  - String:          ':'
+  - Column:          '2'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 244, Column: 3 }
+Function:        scanhash_verus
+Args:
+  - String:          ''''
+  - Callee:          Verus2hash
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 151, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          scanhash_verus
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 195, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '225'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          scanhash_verus
+  - String:          ':'
+  - Line:            '50'
+  - String:          ':'
+  - Column:          '3'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 187, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          ''''
+  - Callee:          _Z6FixKeyPjS_P11__Int64x2_tS1_
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 79, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          scanhash_verus
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 195, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '590'
+  - String:          ', threshold='
+  - Threshold:       '731'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          Verus2hash
+  - String:          ':'
+  - Line:            '38'
+  - String:          ':'
+  - Column:          '2'
+  - String:          ' @ '
+  - String:          scanhash_verus
+  - String:          ':'
+  - Line:            '50'
+  - String:          ':'
+  - Column:          '3'
+  - String:          ';'
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 243, Column: 30 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 244, Column: 102 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 244, Column: 102 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 244, Column: 111 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 244, Column: 111 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 155, Column: 3 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 155, Column: 3 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 159, Column: 16 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 159, Column: 16 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 160, Column: 16 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 160, Column: 16 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 160, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 164, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 164, Column: 2 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 164, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 164, Column: 2 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 173, Column: 31 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 174, Column: 31 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 180, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 180, Column: 2 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 181, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 181, Column: 2 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 181, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 181, Column: 2 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 185, Column: 22 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 185, Column: 22 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 185, Column: 21 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 185, Column: 21 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 186, Column: 22 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 186, Column: 22 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 186, Column: 21 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 186, Column: 21 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 246, Column: 7 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 246, Column: 7 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 246, Column: 7 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 262, Column: 17 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 262, Column: 63 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            zext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 262, Column: 63 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 268, Column: 12 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 268, Column: 12 }
+Function:        scanhash_verus
+Args:
+  - String:          'hoisting '
+  - Inst:            sext
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 268, Column: 12 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 243, Column: 30 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 160, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 173, Column: 31 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 174, Column: 31 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 246, Column: 7 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 262, Column: 17 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 268, Column: 12 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 141, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 125, Column: 4 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadPRE
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 141, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          load eliminated by PRE
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 240, Column: 25 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 237, Column: 2 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 243, Column: 30 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i1
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  phi
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 243, Column: 30 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 160, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 64, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 160, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 237, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 173, Column: 31 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 171, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 174, Column: 31 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 171, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 27 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 27 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 27 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 27 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 27 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 27 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 27 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 256, Column: 23 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 249, Column: 22 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 254, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 280, Column: 15 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 273, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 141, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 125, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 240, Column: 25 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 237, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 160, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 237, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 160, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 64, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 173, Column: 31 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 171, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 174, Column: 31 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 171, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 27 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 27 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 27 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 27 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 27 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 27 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 27 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 184, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 256, Column: 23 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 249, Column: 22 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 254, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 280, Column: 15 }
+Function:        scanhash_verus
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verusscan.cpp', Line: 273, Column: 2 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 160, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 173, Column: 31 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 174, Column: 31 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 246, Column: 7 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 262, Column: 17 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 268, Column: 12 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            NonReductionValueUsedOutsideLoop
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        _Z11GenNewCLKeyPhP11__Int64x2_t
+Args:
+  - String:          'loop not vectorized: '
+  - String:          value that could not be identified as reduction is used outside the loop
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantVectorizeInstruction
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        _Z11GenNewCLKeyPhP11__Int64x2_t
+Args:
+  - String:          'loop not vectorized: '
+  - String:          instruction cannot be vectorized
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        _Z11GenNewCLKeyPhP11__Int64x2_t
+Args:
+  - String:          loop not vectorized
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        _Z11GenNewCLKeyPhP11__Int64x2_t
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            NoCFGForSelect
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 131, Column: 3 }
+Function:        VerusHashHalf
+Args:
+  - String:          'loop not vectorized: '
+  - String:          control flow cannot be substituted for a select
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            NonReductionValueUsedOutsideLoop
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 118, Column: 2 }
+Function:        VerusHashHalf
+Args:
+  - String:          'loop not vectorized: '
+  - String:          value that could not be identified as reduction is used outside the loop
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantComputeNumberOfIterations
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 118, Column: 2 }
+Function:        VerusHashHalf
+Args:
+  - String:          'loop not vectorized: '
+  - String:          could not determine number of loop iterations
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 118, Column: 2 }
+Function:        VerusHashHalf
+Args:
+  - String:          loop not vectorized
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 0, Column: 0 }
+Function:        VerusHashHalf
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 0, Column: 0 }
+Function:        VerusHashHalf
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        VerusHashHalf
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        VerusHashHalf
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        VerusHashHalf
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            NonReductionValueUsedOutsideLoop
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        Verus2hash
+Args:
+  - String:          'loop not vectorized: '
+  - String:          value that could not be identified as reduction is used outside the loop
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantVectorizeInstruction
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        Verus2hash
+Args:
+  - String:          'loop not vectorized: '
+  - String:          instruction cannot be vectorized
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        Verus2hash
+Args:
+  - String:          loop not vectorized
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 173, Column: 22 }
+Function:        Verus2hash
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        Verus2hash
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 25 }
+Function:        _Z6FixKeyPjS_P11__Int64x2_tS1_
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            NonReductionValueUsedOutsideLoop
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 118, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'loop not vectorized: '
+  - String:          value that could not be identified as reduction is used outside the loop
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantVectorizeInstruction
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 118, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'loop not vectorized: '
+  - String:          instruction cannot be vectorized
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 118, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          loop not vectorized
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            NonReductionValueUsedOutsideLoop
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'loop not vectorized: '
+  - String:          value that could not be identified as reduction is used outside the loop
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantVectorizeInstruction
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'loop not vectorized: '
+  - String:          instruction cannot be vectorized
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          loop not vectorized
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            NonReductionValueUsedOutsideLoop
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'loop not vectorized: '
+  - String:          value that could not be identified as reduction is used outside the loop
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantVectorizeInstruction
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          'loop not vectorized: '
+  - String:          instruction cannot be vectorized
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 62, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          loop not vectorized
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        scanhash_verus
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        scanhash_verus
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        scanhash_verus
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        scanhash_verus
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        scanhash_verus
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 160, Column: 2 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 173, Column: 31 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 174, Column: 31 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 84, Column: 40 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 85, Column: 42 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 246, Column: 7 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 262, Column: 17 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'verus/verusscan.cpp', Line: 268, Column: 12 }
+Function:        scanhash_verus
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...

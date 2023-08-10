@@ -1,0 +1,4102 @@
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: '/usr/include/stdlib.h', Line: 363, Column: 16 }
+Function:        atoi
+Args:
+  - Callee:          strtol
+  - String:          ' will not be inlined into '
+  - Caller:          atoi
+    DebugLoc:        { File: '/usr/include/stdlib.h', Line: 362, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: '/usr/include/stdlib.h', Line: 363, Column: 16 }
+Function:        atoi
+Args:
+  - Callee:          strtol
+  - String:          ' will not be inlined into '
+  - Caller:          atoi
+    DebugLoc:        { File: '/usr/include/stdlib.h', Line: 362, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: '/usr/include/aarch64-linux-gnu/bits/stdlib-float.h', 
+                   Line: 27, Column: 10 }
+Function:        atof
+Args:
+  - Callee:          strtod
+  - String:          ' will not be inlined into '
+  - Caller:          atof
+    DebugLoc:        { File: '/usr/include/aarch64-linux-gnu/bits/stdlib-float.h', 
+                       Line: 26, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: '/usr/include/aarch64-linux-gnu/bits/stdlib-float.h', 
+                   Line: 27, Column: 10 }
+Function:        atof
+Args:
+  - Callee:          strtod
+  - String:          ' will not be inlined into '
+  - Caller:          atof
+    DebugLoc:        { File: '/usr/include/aarch64-linux-gnu/bits/stdlib-float.h', 
+                       Line: 26, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 73, Column: 2 }
+Function:        pool_set_creds
+Args:
+  - Callee:          snprintf
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_creds
+    DebugLoc:        { File: pools.cpp, Line: 70, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 74, Column: 2 }
+Function:        pool_set_creds
+Args:
+  - Callee:          snprintf
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_creds
+    DebugLoc:        { File: pools.cpp, Line: 70, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 75, Column: 2 }
+Function:        pool_set_creds
+Args:
+  - Callee:          snprintf
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_creds
+    DebugLoc:        { File: pools.cpp, Line: 70, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 76, Column: 2 }
+Function:        pool_set_creds
+Args:
+  - Callee:          snprintf
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_creds
+    DebugLoc:        { File: pools.cpp, Line: 70, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 98, Column: 8 }
+Function:        pool_set_creds
+Args:
+  - Callee:          strncasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_creds
+    DebugLoc:        { File: pools.cpp, Line: 70, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 73, Column: 2 }
+Function:        pool_set_creds
+Args:
+  - Callee:          snprintf
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_creds
+    DebugLoc:        { File: pools.cpp, Line: 70, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 74, Column: 2 }
+Function:        pool_set_creds
+Args:
+  - Callee:          snprintf
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_creds
+    DebugLoc:        { File: pools.cpp, Line: 70, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 75, Column: 2 }
+Function:        pool_set_creds
+Args:
+  - Callee:          snprintf
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_creds
+    DebugLoc:        { File: pools.cpp, Line: 70, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 76, Column: 2 }
+Function:        pool_set_creds
+Args:
+  - Callee:          snprintf
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_creds
+    DebugLoc:        { File: pools.cpp, Line: 70, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 98, Column: 8 }
+Function:        pool_set_creds
+Args:
+  - Callee:          strncasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_creds
+    DebugLoc:        { File: pools.cpp, Line: 70, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 74, Column: 53 }
+Function:        pool_set_creds
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 73, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 75, Column: 43 }
+Function:        pool_set_creds
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 74, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 76, Column: 43 }
+Function:        pool_set_creds
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 75, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 78, Column: 11 }
+Function:        pool_set_creds
+Args:
+  - String:          'load of type '
+  - Type:            i16
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 76, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 90, Column: 25 }
+Function:        pool_set_creds
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 76, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 91, Column: 18 }
+Function:        pool_set_creds
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 76, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 92, Column: 19 }
+Function:        pool_set_creds
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 76, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 97, Column: 13 }
+Function:        pool_set_creds
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 73, Column: 41 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 76, Column: 2 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: pools.cpp, Line: 102, Column: 13 }
+Function:        pool_set_creds
+Args:
+  - String:          'load of type '
+  - Type:            i16
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  phi
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 74, Column: 53 }
+Function:        pool_set_creds
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 73, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 75, Column: 43 }
+Function:        pool_set_creds
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 74, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 76, Column: 43 }
+Function:        pool_set_creds
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 75, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 78, Column: 11 }
+Function:        pool_set_creds
+Args:
+  - String:          'load of type '
+  - Type:            i16
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 76, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 90, Column: 25 }
+Function:        pool_set_creds
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 76, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 91, Column: 18 }
+Function:        pool_set_creds
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 76, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 92, Column: 19 }
+Function:        pool_set_creds
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 76, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 97, Column: 13 }
+Function:        pool_set_creds
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 73, Column: 41 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 76, Column: 2 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: pools.cpp, Line: 110, Column: 18 }
+Function:        pool_init_defaults
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: pools.cpp, Line: 110, Column: 18 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: pools.cpp, Line: 113, Column: 41 }
+Function:        pool_init_defaults
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: pools.cpp, Line: 113, Column: 41 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: pools.cpp, Line: 114, Column: 41 }
+Function:        pool_init_defaults
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: pools.cpp, Line: 114, Column: 41 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: pools.cpp, Line: 115, Column: 40 }
+Function:        pool_init_defaults
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: pools.cpp, Line: 115, Column: 40 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: pools.cpp, Line: 116, Column: 48 }
+Function:        pool_init_defaults
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: pools.cpp, Line: 116, Column: 48 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: pools.cpp, Line: 117, Column: 44 }
+Function:        pool_init_defaults
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: pools.cpp, Line: 117, Column: 44 }
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 167, Column: 25 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 174, Column: 8 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 176, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 178, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 180, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 182, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 184, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 186, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 188, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 190, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 192, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 194, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 196, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 198, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 200, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 202, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 204, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 206, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 208, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 167, Column: 25 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 174, Column: 8 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 176, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 178, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 180, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 182, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 184, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 186, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 188, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 190, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 192, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 194, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 196, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 198, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 200, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 202, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 204, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 206, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: './algos.h', Line: 208, Column: 13 }
+Function:        _ZL11algo_to_intPc
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11algo_to_intPc
+    DebugLoc:        { File: './algos.h', Line: 163, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 125, Column: 7 }
+Function:        pool_set_attr
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_attr
+    DebugLoc:        { File: pools.cpp, Line: 123, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 126, Column: 3 }
+Function:        pool_set_attr
+Args:
+  - Callee:          snprintf
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_attr
+    DebugLoc:        { File: pools.cpp, Line: 123, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 129, Column: 7 }
+Function:        pool_set_attr
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_attr
+    DebugLoc:        { File: pools.cpp, Line: 123, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 133, Column: 7 }
+Function:        pool_set_attr
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_attr
+    DebugLoc:        { File: pools.cpp, Line: 123, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 137, Column: 7 }
+Function:        pool_set_attr
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_attr
+    DebugLoc:        { File: pools.cpp, Line: 123, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 141, Column: 7 }
+Function:        pool_set_attr
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_attr
+    DebugLoc:        { File: pools.cpp, Line: 123, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 145, Column: 7 }
+Function:        pool_set_attr
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_attr
+    DebugLoc:        { File: pools.cpp, Line: 123, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 149, Column: 7 }
+Function:        pool_set_attr
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_attr
+    DebugLoc:        { File: pools.cpp, Line: 123, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 153, Column: 7 }
+Function:        pool_set_attr
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_attr
+    DebugLoc:        { File: pools.cpp, Line: 123, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 125, Column: 7 }
+Function:        pool_set_attr
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_attr
+    DebugLoc:        { File: pools.cpp, Line: 123, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 126, Column: 3 }
+Function:        pool_set_attr
+Args:
+  - Callee:          snprintf
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_attr
+    DebugLoc:        { File: pools.cpp, Line: 123, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 129, Column: 7 }
+Function:        pool_set_attr
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_attr
+    DebugLoc:        { File: pools.cpp, Line: 123, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 133, Column: 7 }
+Function:        pool_set_attr
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_attr
+    DebugLoc:        { File: pools.cpp, Line: 123, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 137, Column: 7 }
+Function:        pool_set_attr
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_attr
+    DebugLoc:        { File: pools.cpp, Line: 123, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 141, Column: 7 }
+Function:        pool_set_attr
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_attr
+    DebugLoc:        { File: pools.cpp, Line: 123, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 145, Column: 7 }
+Function:        pool_set_attr
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_attr
+    DebugLoc:        { File: pools.cpp, Line: 123, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 149, Column: 7 }
+Function:        pool_set_attr
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_attr
+    DebugLoc:        { File: pools.cpp, Line: 123, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 153, Column: 7 }
+Function:        pool_set_attr
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          pool_set_attr
+    DebugLoc:        { File: pools.cpp, Line: 123, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: pools.cpp, Line: 130, Column: 13 }
+Function:        pool_set_attr
+Args:
+  - String:          ''''
+  - Callee:          _ZL11algo_to_intPc
+  - String:          ''' inlined into '''
+  - Caller:          pool_set_attr
+    DebugLoc:        { File: pools.cpp, Line: 123, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-14060'
+  - String:          ', threshold='
+  - Threshold:       '325'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          pool_set_attr
+  - String:          ':'
+  - Line:            '8'
+  - String:          ':'
+  - Column:          '13'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: pools.cpp, Line: 134, Column: 17 }
+Function:        pool_set_attr
+Args:
+  - String:          ''''
+  - Callee:          atoi
+    DebugLoc:        { File: '/usr/include/stdlib.h', Line: 362, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          pool_set_attr
+    DebugLoc:        { File: pools.cpp, Line: 123, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '10'
+  - String:          ', threshold='
+  - Threshold:       '487'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          pool_set_attr
+  - String:          ':'
+  - Line:            '12'
+  - String:          ':'
+  - Column:          '17'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: pools.cpp, Line: 138, Column: 17 }
+Function:        pool_set_attr
+Args:
+  - String:          ''''
+  - Callee:          atof
+    DebugLoc:        { File: '/usr/include/aarch64-linux-gnu/bits/stdlib-float.h', 
+                       Line: 26, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          pool_set_attr
+    DebugLoc:        { File: pools.cpp, Line: 123, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '5'
+  - String:          ', threshold='
+  - Threshold:       '487'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          pool_set_attr
+  - String:          ':'
+  - Line:            '16'
+  - String:          ':'
+  - Column:          '17'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: pools.cpp, Line: 142, Column: 17 }
+Function:        pool_set_attr
+Args:
+  - String:          ''''
+  - Callee:          atof
+    DebugLoc:        { File: '/usr/include/aarch64-linux-gnu/bits/stdlib-float.h', 
+                       Line: 26, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          pool_set_attr
+    DebugLoc:        { File: pools.cpp, Line: 123, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '5'
+  - String:          ', threshold='
+  - Threshold:       '487'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          pool_set_attr
+  - String:          ':'
+  - Line:            '20'
+  - String:          ':'
+  - Column:          '17'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: pools.cpp, Line: 146, Column: 21 }
+Function:        pool_set_attr
+Args:
+  - String:          ''''
+  - Callee:          atoi
+    DebugLoc:        { File: '/usr/include/stdlib.h', Line: 362, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          pool_set_attr
+    DebugLoc:        { File: pools.cpp, Line: 123, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '10'
+  - String:          ', threshold='
+  - Threshold:       '487'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          pool_set_attr
+  - String:          ':'
+  - Line:            '24'
+  - String:          ':'
+  - Column:          '21'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: pools.cpp, Line: 150, Column: 19 }
+Function:        pool_set_attr
+Args:
+  - String:          ''''
+  - Callee:          atoi
+    DebugLoc:        { File: '/usr/include/stdlib.h', Line: 362, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          pool_set_attr
+    DebugLoc:        { File: pools.cpp, Line: 123, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '10'
+  - String:          ', threshold='
+  - Threshold:       '487'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          pool_set_attr
+  - String:          ':'
+  - Line:            '28'
+  - String:          ':'
+  - Column:          '19'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: pools.cpp, Line: 154, Column: 17 }
+Function:        pool_set_attr
+Args:
+  - String:          ''''
+  - Callee:          atoi
+    DebugLoc:        { File: '/usr/include/stdlib.h', Line: 362, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          pool_set_attr
+    DebugLoc:        { File: pools.cpp, Line: 123, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '10'
+  - String:          ', threshold='
+  - Threshold:       '45'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          pool_set_attr
+  - String:          ':'
+  - Line:            '32'
+  - String:          ':'
+  - Column:          '17'
+  - String:          ';'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 156, Column: 14 }
+Function:        pool_set_attr
+Args:
+  - String:          'load of type '
+  - Type:            i16
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: '/usr/include/stdlib.h', Line: 363, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 156, Column: 14 }
+Function:        pool_set_attr
+Args:
+  - String:          'load of type '
+  - Type:            i16
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: '/usr/include/stdlib.h', Line: 363, Column: 16 }
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 174, Column: 3 }
+Function:        pool_switch
+Args:
+  - Callee:          stratum_free_job
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 191, Column: 2 }
+Function:        pool_switch
+Args:
+  - Callee:          pthread_mutex_lock
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 193, Column: 2 }
+Function:        pool_switch
+Args:
+  - Callee:          free
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 193, Column: 29 }
+Function:        pool_switch
+Args:
+  - Callee:          strdup
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 194, Column: 2 }
+Function:        pool_switch
+Args:
+  - Callee:          free
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 194, Column: 29 }
+Function:        pool_switch
+Args:
+  - Callee:          strdup
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 195, Column: 2 }
+Function:        pool_switch
+Args:
+  - Callee:          free
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 195, Column: 28 }
+Function:        pool_switch
+Args:
+  - Callee:          strdup
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 208, Column: 23 }
+Function:        pool_switch
+Args:
+  - Callee:          strstr
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 182, Column: 3 }
+Function:        pool_switch
+Args:
+  - Callee:          applog
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 208, Column: 61 }
+Function:        pool_switch
+Args:
+  - Callee:          strcmp
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 210, Column: 2 }
+Function:        pool_switch
+Args:
+  - Callee:          pthread_mutex_unlock
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 220, Column: 4 }
+Function:        pool_switch
+Args:
+  - Callee:          pthread_mutex_lock
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 223, Column: 4 }
+Function:        pool_switch
+Args:
+  - Callee:          stats_purge_all
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 225, Column: 5 }
+Function:        pool_switch
+Args:
+  - Callee:          hashlog_purge_all
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 226, Column: 4 }
+Function:        pool_switch
+Args:
+  - Callee:          pthread_mutex_unlock
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 241, Column: 20 }
+Function:        pool_switch
+Args:
+  - Callee:          time
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 242, Column: 3 }
+Function:        pool_switch
+Args:
+  - Callee:          restart_threads
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 261, Column: 40 }
+Function:        pool_switch
+Args:
+  - Callee:          strdup
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 261, Column: 4 }
+Function:        pool_switch
+Args:
+  - Callee:          tq_push
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 262, Column: 4 }
+Function:        pool_switch
+Args:
+  - Callee:          applog
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 265, Column: 4 }
+Function:        pool_switch
+Args:
+  - Callee:          applog
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 272, Column: 4 }
+Function:        pool_switch
+Args:
+  - Callee:          pthread_mutex_lock
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 275, Column: 4 }
+Function:        pool_switch
+Args:
+  - Callee:          _Z8get_workP8thr_infoP4work
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 276, Column: 4 }
+Function:        pool_switch
+Args:
+  - Callee:          pthread_mutex_unlock
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 174, Column: 3 }
+Function:        pool_switch
+Args:
+  - Callee:          stratum_free_job
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 191, Column: 2 }
+Function:        pool_switch
+Args:
+  - Callee:          pthread_mutex_lock
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 193, Column: 2 }
+Function:        pool_switch
+Args:
+  - Callee:          free
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 193, Column: 29 }
+Function:        pool_switch
+Args:
+  - Callee:          strdup
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 194, Column: 2 }
+Function:        pool_switch
+Args:
+  - Callee:          free
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 194, Column: 29 }
+Function:        pool_switch
+Args:
+  - Callee:          strdup
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 195, Column: 2 }
+Function:        pool_switch
+Args:
+  - Callee:          free
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 195, Column: 28 }
+Function:        pool_switch
+Args:
+  - Callee:          strdup
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 208, Column: 23 }
+Function:        pool_switch
+Args:
+  - Callee:          strstr
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 182, Column: 3 }
+Function:        pool_switch
+Args:
+  - Callee:          applog
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 208, Column: 61 }
+Function:        pool_switch
+Args:
+  - Callee:          strcmp
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 210, Column: 2 }
+Function:        pool_switch
+Args:
+  - Callee:          pthread_mutex_unlock
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 220, Column: 4 }
+Function:        pool_switch
+Args:
+  - Callee:          pthread_mutex_lock
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 223, Column: 4 }
+Function:        pool_switch
+Args:
+  - Callee:          stats_purge_all
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 225, Column: 5 }
+Function:        pool_switch
+Args:
+  - Callee:          hashlog_purge_all
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 226, Column: 4 }
+Function:        pool_switch
+Args:
+  - Callee:          pthread_mutex_unlock
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 241, Column: 20 }
+Function:        pool_switch
+Args:
+  - Callee:          time
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 242, Column: 3 }
+Function:        pool_switch
+Args:
+  - Callee:          restart_threads
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 261, Column: 40 }
+Function:        pool_switch
+Args:
+  - Callee:          strdup
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 261, Column: 4 }
+Function:        pool_switch
+Args:
+  - Callee:          tq_push
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 262, Column: 4 }
+Function:        pool_switch
+Args:
+  - Callee:          applog
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 265, Column: 4 }
+Function:        pool_switch
+Args:
+  - Callee:          applog
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 272, Column: 4 }
+Function:        pool_switch
+Args:
+  - Callee:          pthread_mutex_lock
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 275, Column: 4 }
+Function:        pool_switch
+Args:
+  - Callee:          _Z8get_workP8thr_infoP4work
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 276, Column: 4 }
+Function:        pool_switch
+Args:
+  - Callee:          pthread_mutex_unlock
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: pools.cpp, Line: 221, Column: 20 }
+Function:        pool_switch
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: pools.cpp, Line: 221, Column: 20 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: pools.cpp, Line: 244, Column: 19 }
+Function:        pool_switch
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: pools.cpp, Line: 244, Column: 19 }
+...
+--- !Passed
+Pass:            loop-idiom
+Name:            ProcessLoopStridedStore
+DebugLoc:        { File: pools.cpp, Line: 222, Column: 22 }
+Function:        pool_switch
+Args:
+  - String:          'Transformed loop-strided store in '
+  - Function:        pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' function into a call to '
+  - NewFunction:     llvm.memset.p0i8.i64
+  - String:          '() intrinsic'
+...
+--- !Passed
+Pass:            loop-delete
+Name:            Invariant
+DebugLoc:        { File: pools.cpp, Line: 221, Column: 4 }
+Function:        pool_switch
+Args:
+  - String:          Loop deleted because it is invariant
+...
+--- !Passed
+Pass:            loop-idiom
+Name:            ProcessLoopStridedStore
+DebugLoc:        { File: pools.cpp, Line: 245, Column: 25 }
+Function:        pool_switch
+Args:
+  - String:          'Transformed loop-strided store in '
+  - Function:        pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ' function into a call to '
+  - NewFunction:     llvm.memset.p0i8.i64
+  - String:          '() intrinsic'
+...
+--- !Passed
+Pass:            loop-delete
+Name:            Invariant
+DebugLoc:        { File: pools.cpp, Line: 244, Column: 3 }
+Function:        pool_switch
+Args:
+  - String:          Loop deleted because it is invariant
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 178, Column: 14 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 174, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 187, Column: 27 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 174, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 188, Column: 20 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 174, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 189, Column: 21 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 174, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 193, Column: 7 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 191, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 194, Column: 7 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 193, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 195, Column: 7 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 194, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 199, Column: 20 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 195, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 200, Column: 20 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 195, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 201, Column: 20 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 195, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 202, Column: 24 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 195, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 203, Column: 22 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 195, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 205, Column: 36 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 195, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 214, Column: 9 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 210, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 220, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 224, Column: 8 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 189, Column: 21 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 223, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 229, Column: 34 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 214, Column: 9 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 226, Column: 4 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadPRE
+DebugLoc:        { File: pools.cpp, Line: 229, Column: 34 }
+Function:        pool_switch
+Args:
+  - String:          load eliminated by PRE
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 242, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 248, Column: 18 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 242, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 249, Column: 25 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 242, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 250, Column: 19 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i16
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 242, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 252, Column: 7 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: pools.cpp, Line: 205, Column: 15 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 242, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 257, Column: 23 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 214, Column: 9 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 242, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 261, Column: 12 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            '%struct.thr_info*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 242, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 261, Column: 21 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 242, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 261, Column: 37 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            '%struct.thread_q*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 255, Column: 12 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 261, Column: 47 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: pools.cpp, Line: 195, Column: 26 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 242, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 263, Column: 5 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 261, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 266, Column: 5 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 242, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 270, Column: 23 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 205, Column: 36 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 262, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 270, Column: 23 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 205, Column: 36 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 265, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 275, Column: 14 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            '%struct.thr_info*'
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 261, Column: 12 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 272, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 281, Column: 21 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 214, Column: 9 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 276, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 281, Column: 21 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 214, Column: 9 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 262, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 281, Column: 21 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 214, Column: 9 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 265, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 178, Column: 14 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 174, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 187, Column: 27 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 174, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 188, Column: 20 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 174, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 189, Column: 21 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 174, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 193, Column: 7 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 191, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 194, Column: 7 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 193, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 195, Column: 7 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 194, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 199, Column: 20 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 195, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 200, Column: 20 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 195, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 201, Column: 20 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 195, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 202, Column: 24 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 195, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 203, Column: 22 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 195, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 205, Column: 36 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 195, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 214, Column: 9 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 210, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 220, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 224, Column: 8 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 189, Column: 21 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 223, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 229, Column: 34 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 214, Column: 9 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 226, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 242, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 248, Column: 18 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 242, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 249, Column: 25 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 242, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 250, Column: 19 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i16
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 242, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 252, Column: 7 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: pools.cpp, Line: 205, Column: 15 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 242, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 257, Column: 23 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 214, Column: 9 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 242, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 261, Column: 12 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            '%struct.thr_info*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 242, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 261, Column: 21 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 242, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 261, Column: 37 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            '%struct.thread_q*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 255, Column: 12 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 261, Column: 47 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: pools.cpp, Line: 195, Column: 26 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 242, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 263, Column: 5 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 261, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 266, Column: 5 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 242, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 270, Column: 23 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 205, Column: 36 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 262, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 270, Column: 23 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 205, Column: 36 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 265, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 275, Column: 14 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            '%struct.thr_info*'
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 261, Column: 12 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 272, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 281, Column: 21 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 214, Column: 9 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 276, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 281, Column: 21 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 214, Column: 9 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 262, Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 281, Column: 21 }
+Function:        pool_switch
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 214, Column: 9 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 265, Column: 4 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: pools.cpp, Line: 292, Column: 18 }
+Function:        pool_get_first_valid
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: pools.cpp, Line: 292, Column: 18 }
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 314, Column: 4 }
+Function:        pool_switch_next
+Args:
+  - Callee:          applog
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch_next
+    DebugLoc:        { File: pools.cpp, Line: 307, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 314, Column: 4 }
+Function:        pool_switch_next
+Args:
+  - Callee:          applog
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch_next
+    DebugLoc:        { File: pools.cpp, Line: 307, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: pools.cpp, Line: 309, Column: 15 }
+Function:        pool_switch_next
+Args:
+  - String:          ''''
+  - Callee:          pool_get_first_valid
+    DebugLoc:        { File: pools.cpp, Line: 289, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          pool_switch_next
+    DebugLoc:        { File: pools.cpp, Line: 307, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '30'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          pool_switch_next
+  - String:          ':'
+  - Line:            '3'
+  - String:          ':'
+  - Column:          '15'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: pools.cpp, Line: 310, Column: 10 }
+Function:        pool_switch_next
+Args:
+  - String:          ''''
+  - Callee:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          pool_switch_next
+    DebugLoc:        { File: pools.cpp, Line: 307, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '650'
+  - String:          ', threshold='
+  - Threshold:       '625'
+  - String:          ')'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 323, Column: 2 }
+Function:        pool_switch_url
+Args:
+  - Callee:          parse_arg
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch_url
+    DebugLoc:        { File: pools.cpp, Line: 321, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 323, Column: 2 }
+Function:        pool_switch_url
+Args:
+  - Callee:          parse_arg
+  - String:          ' will not be inlined into '
+  - Caller:          pool_switch_url
+    DebugLoc:        { File: pools.cpp, Line: 321, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: pools.cpp, Line: 330, Column: 9 }
+Function:        pool_switch_url
+Args:
+  - String:          ''''
+  - Callee:          pool_switch
+    DebugLoc:        { File: pools.cpp, Line: 164, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          pool_switch_url
+    DebugLoc:        { File: pools.cpp, Line: 321, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '650'
+  - String:          ', threshold='
+  - Threshold:       '625'
+  - String:          ')'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 343, Column: 2 }
+Function:        parse_pool_array
+Args:
+  - Callee:          json_array_size
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 343, Column: 2 }
+Function:        parse_pool_array
+Args:
+  - Callee:          json_array_get
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 355, Column: 10 }
+Function:        parse_pool_array
+Args:
+  - Callee:          json_object_get
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 359, Column: 24 }
+Function:        parse_pool_array
+Args:
+  - Callee:          options_count
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 362, Column: 19 }
+Function:        parse_pool_array
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 366, Column: 20 }
+Function:        parse_pool_array
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 375, Column: 16 }
+Function:        parse_pool_array
+Args:
+  - Callee:          json_string_value
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 375, Column: 9 }
+Function:        parse_pool_array
+Args:
+  - Callee:          strdup
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 380, Column: 5 }
+Function:        parse_pool_array
+Args:
+  - Callee:          parse_arg
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 381, Column: 5 }
+Function:        parse_pool_array
+Args:
+  - Callee:          free
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 388, Column: 16 }
+Function:        parse_pool_array
+Args:
+  - Callee:          json_integer_value
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 390, Column: 10 }
+Function:        parse_pool_array
+Args:
+  - Callee:          json_real_value
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 391, Column: 5 }
+Function:        parse_pool_array
+Args:
+  - Callee:          snprintf
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 393, Column: 5 }
+Function:        parse_pool_array
+Args:
+  - Callee:          parse_arg
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 343, Column: 2 }
+Function:        parse_pool_array
+Args:
+  - Callee:          json_array_size
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 343, Column: 2 }
+Function:        parse_pool_array
+Args:
+  - Callee:          json_array_get
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 355, Column: 10 }
+Function:        parse_pool_array
+Args:
+  - Callee:          json_object_get
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 359, Column: 24 }
+Function:        parse_pool_array
+Args:
+  - Callee:          options_count
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 362, Column: 19 }
+Function:        parse_pool_array
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 366, Column: 20 }
+Function:        parse_pool_array
+Args:
+  - Callee:          strcasecmp
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 375, Column: 16 }
+Function:        parse_pool_array
+Args:
+  - Callee:          json_string_value
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 375, Column: 9 }
+Function:        parse_pool_array
+Args:
+  - Callee:          strdup
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 380, Column: 5 }
+Function:        parse_pool_array
+Args:
+  - Callee:          parse_arg
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 381, Column: 5 }
+Function:        parse_pool_array
+Args:
+  - Callee:          free
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 388, Column: 16 }
+Function:        parse_pool_array
+Args:
+  - Callee:          json_integer_value
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 390, Column: 10 }
+Function:        parse_pool_array
+Args:
+  - Callee:          json_real_value
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 391, Column: 5 }
+Function:        parse_pool_array
+Args:
+  - Callee:          snprintf
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 393, Column: 5 }
+Function:        parse_pool_array
+Args:
+  - Callee:          parse_arg
+  - String:          ' will not be inlined into '
+  - Caller:          parse_pool_array
+    DebugLoc:        { File: pools.cpp, Line: 335, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: pools.cpp, Line: 361, Column: 43 }
+Function:        parse_pool_array
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: pools.cpp, Line: 361, Column: 43 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: pools.cpp, Line: 361, Column: 43 }
+Function:        parse_pool_array
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: pools.cpp, Line: 366, Column: 66 }
+Function:        parse_pool_array
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: pools.cpp, Line: 361, Column: 43 }
+Function:        parse_pool_array
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: pools.cpp, Line: 366, Column: 66 }
+Function:        parse_pool_array
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: pools.cpp, Line: 384, Column: 5 }
+Function:        parse_pool_array
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: pools.cpp, Line: 384, Column: 5 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+Function:        parse_pool_array
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 345, Column: 8 }
+Function:        parse_pool_array
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 343, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 352, Column: 26 }
+Function:        parse_pool_array
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 343, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 355, Column: 47 }
+Function:        parse_pool_array
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 366, Column: 66 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 343, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 361, Column: 43 }
+Function:        parse_pool_array
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 359, Column: 24 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 362, Column: 41 }
+Function:        parse_pool_array
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 359, Column: 24 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 366, Column: 42 }
+Function:        parse_pool_array
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 359, Column: 24 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 366, Column: 66 }
+Function:        parse_pool_array
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 355, Column: 47 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 359, Column: 24 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 374, Column: 8 }
+Function:        parse_pool_array
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 386, Column: 9 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 359, Column: 24 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 386, Column: 9 }
+Function:        parse_pool_array
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 374, Column: 8 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 384, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 393, Column: 28 }
+Function:        parse_pool_array
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 391, Column: 5 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 380, Column: 28 }
+Function:        parse_pool_array
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 375, Column: 16 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 345, Column: 8 }
+Function:        parse_pool_array
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 343, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 352, Column: 26 }
+Function:        parse_pool_array
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 343, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 355, Column: 47 }
+Function:        parse_pool_array
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 366, Column: 66 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 343, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 361, Column: 43 }
+Function:        parse_pool_array
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 359, Column: 24 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 362, Column: 41 }
+Function:        parse_pool_array
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 359, Column: 24 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 366, Column: 42 }
+Function:        parse_pool_array
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 359, Column: 24 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 366, Column: 66 }
+Function:        parse_pool_array
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 355, Column: 47 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 359, Column: 24 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 374, Column: 8 }
+Function:        parse_pool_array
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 386, Column: 9 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 359, Column: 24 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 386, Column: 9 }
+Function:        parse_pool_array
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: pools.cpp, Line: 374, Column: 8 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 384, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 393, Column: 28 }
+Function:        parse_pool_array
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 391, Column: 5 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 380, Column: 28 }
+Function:        parse_pool_array
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 375, Column: 16 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: pools.cpp, Line: 361, Column: 43 }
+Function:        parse_pool_array
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: pools.cpp, Line: 366, Column: 66 }
+Function:        parse_pool_array
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 407, Column: 3 }
+Function:        pool_dump_infos
+Args:
+  - Callee:          applog
+  - String:          ' will not be inlined into '
+  - Caller:          pool_dump_infos
+    DebugLoc:        { File: pools.cpp, Line: 402, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: pools.cpp, Line: 407, Column: 3 }
+Function:        pool_dump_infos
+Args:
+  - Callee:          applog
+  - String:          ' will not be inlined into '
+  - Caller:          pool_dump_infos
+    DebugLoc:        { File: pools.cpp, Line: 402, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: pools.cpp, Line: 405, Column: 18 }
+Function:        pool_dump_infos
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: pools.cpp, Line: 405, Column: 18 }
+Function:        pool_dump_infos
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: pools.cpp, Line: 405, Column: 18 }
+Function:        pool_dump_infos
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: pools.cpp, Line: 407, Column: 3 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: pools.cpp, Line: 405, Column: 18 }
+Function:        pool_dump_infos
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            slp-vectorizer
+Name:            StoresVectorized
+DebugLoc:        { File: pools.cpp, Line: 84, Column: 15 }
+Function:        pool_set_creds
+Args:
+  - String:          'Stores SLP vectorized with cost '
+  - Cost:            '-1'
+  - String:          ' and with tree size '
+  - TreeSize:        '2'
+...
+--- !Passed
+Pass:            slp-vectorizer
+Name:            StoresVectorized
+DebugLoc:        { File: pools.cpp, Line: 87, Column: 19 }
+Function:        pool_set_creds
+Args:
+  - String:          'Stores SLP vectorized with cost '
+  - Cost:            '-1'
+  - String:          ' and with tree size '
+  - TreeSize:        '2'
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            NonSimpleLoad
+DebugLoc:        { File: pools.cpp, Line: 112, Column: 38 }
+Function:        pool_init_defaults
+Args:
+  - String:          'loop not vectorized: '
+  - String:          read with atomic ordering or volatile read
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: pools.cpp, Line: 110, Column: 2 }
+Function:        pool_init_defaults
+Args:
+  - String:          loop not vectorized
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantVectorizeLibcall
+DebugLoc:        { File: './algos.h', Line: 167, Column: 25 }
+Function:        pool_set_attr
+Args:
+  - String:          'loop not vectorized: '
+  - String:          call instruction cannot be vectorized
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantComputeNumberOfIterations
+DebugLoc:        { File: './algos.h', Line: 166, Column: 2 }
+Function:        pool_set_attr
+Args:
+  - String:          'loop not vectorized: '
+  - String:          could not determine number of loop iterations
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: './algos.h', Line: 166, Column: 2 }
+Function:        pool_set_attr
+Args:
+  - String:          loop not vectorized
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: pools.cpp, Line: 214, Column: 9 }
+Function:        pool_switch
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantComputeNumberOfIterations
+DebugLoc:        { File: pools.cpp, Line: 292, Column: 2 }
+Function:        pool_get_first_valid
+Args:
+  - String:          'loop not vectorized: '
+  - String:          could not determine number of loop iterations
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: pools.cpp, Line: 292, Column: 2 }
+Function:        pool_get_first_valid
+Args:
+  - String:          loop not vectorized
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantComputeNumberOfIterations
+DebugLoc:        { File: pools.cpp, Line: 292, Column: 2 }
+Function:        pool_switch_next
+Args:
+  - String:          'loop not vectorized: '
+  - String:          could not determine number of loop iterations
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: pools.cpp, Line: 292, Column: 2 }
+Function:        pool_switch_next
+Args:
+  - String:          loop not vectorized
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: pools.cpp, Line: 325, Column: 10 }
+Function:        pool_switch_url
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            NoCFGForSelect
+DebugLoc:        { File: pools.cpp, Line: 362, Column: 9 }
+Function:        parse_pool_array
+Args:
+  - String:          'loop not vectorized: '
+  - String:          control flow cannot be substituted for a select
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantVectorizeLibcall
+DebugLoc:        { File: pools.cpp, Line: 359, Column: 24 }
+Function:        parse_pool_array
+Args:
+  - String:          'loop not vectorized: '
+  - String:          call instruction cannot be vectorized
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantComputeNumberOfIterations
+DebugLoc:        { File: pools.cpp, Line: 359, Column: 4 }
+Function:        parse_pool_array
+Args:
+  - String:          'loop not vectorized: '
+  - String:          could not determine number of loop iterations
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: pools.cpp, Line: 359, Column: 4 }
+Function:        parse_pool_array
+Args:
+  - String:          loop not vectorized
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: pools.cpp, Line: 361, Column: 43 }
+Function:        parse_pool_array
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: pools.cpp, Line: 366, Column: 66 }
+Function:        parse_pool_array
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantVectorizeLibcall
+DebugLoc:        { File: pools.cpp, Line: 407, Column: 3 }
+Function:        pool_dump_infos
+Args:
+  - String:          'loop not vectorized: '
+  - String:          call instruction cannot be vectorized
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantComputeNumberOfIterations
+DebugLoc:        { File: pools.cpp, Line: 405, Column: 2 }
+Function:        pool_dump_infos
+Args:
+  - String:          'loop not vectorized: '
+  - String:          could not determine number of loop iterations
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: pools.cpp, Line: 405, Column: 2 }
+Function:        pool_dump_infos
+Args:
+  - String:          loop not vectorized
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: pools.cpp, Line: 405, Column: 18 }
+Function:        pool_dump_infos
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...

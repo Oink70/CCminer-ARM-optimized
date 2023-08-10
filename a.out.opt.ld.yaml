@@ -1,0 +1,32 @@
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: conftest.c, Line: 14, Column: 0 }
+Function:        main
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: conftest.c, Line: 17, Column: 3 }
+Function:        main
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: conftest.c, Line: 14, Column: 0 }
+Function:        main
+Args:
+  - NumInstructions: '2'
+  - String:          ' instructions in function'
+...

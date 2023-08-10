@@ -1,0 +1,3982 @@
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 169, 
+                   Column: 9 }
+Function:        _Z17_mm_setr_epi8_emuhhhhhhhhhhhhhhhh
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 155, 
+                       Column: 27 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 169, 
+                   Column: 9 }
+Function:        _Z17_mm_setr_epi8_emuhhhhhhhhhhhhhhhh
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 155, 
+                       Column: 27 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 194, 
+                   Column: 24 }
+Function:        _Z22_mm_srli_si128_emu_old11__Int64x2_ti
+Args:
+  - String:          'hoisting '
+  - Inst:            and
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 194, 
+                       Column: 24 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 194, 
+                   Column: 24 }
+Function:        _Z22_mm_srli_si128_emu_old11__Int64x2_ti
+Args:
+  - String:          'hoisting '
+  - Inst:            select
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 194, 
+                       Column: 24 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 194, 
+                   Column: 22 }
+Function:        _Z22_mm_srli_si128_emu_old11__Int64x2_ti
+Args:
+  - String:          'hoisting '
+  - Inst:            sub
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 194, 
+                       Column: 22 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 196, 
+                   Column: 15 }
+Function:        _Z22_mm_srli_si128_emu_old11__Int64x2_ti
+Args:
+  - String:          'hoisting '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 196, 
+                       Column: 15 }
+...
+--- !Passed
+Pass:            loop-idiom
+Name:            ProcessLoopStoreOfLoopLoad
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 196, 
+                   Column: 13 }
+Function:        _Z22_mm_srli_si128_emu_old11__Int64x2_ti
+Args:
+  - String:          'Formed a call to '
+  - NewFunction:     llvm.memcpy.p0i8.p0i8.i64
+  - String:          '() intrinsic from '
+  - Inst:            load and store
+  - String:          ' instruction in '
+  - Function:        _Z22_mm_srli_si128_emu_old11__Int64x2_ti
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 188, 
+                       Column: 0 }
+  - String:          ' function'
+...
+--- !Passed
+Pass:            loop-delete
+Name:            Invariant
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 194, 
+                   Column: 2 }
+Function:        _Z22_mm_srli_si128_emu_old11__Int64x2_ti
+Args:
+  - String:          Loop deleted because it is invariant
+...
+--- !Passed
+Pass:            loop-idiom
+Name:            ProcessLoopStridedStore
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 200, 
+                   Column: 13 }
+Function:        _Z22_mm_srli_si128_emu_old11__Int64x2_ti
+Args:
+  - String:          'Transformed loop-strided store in '
+  - Function:        _Z22_mm_srli_si128_emu_old11__Int64x2_ti
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 188, 
+                       Column: 0 }
+  - String:          ' function into a call to '
+  - NewFunction:     llvm.memset.p0i8.i64
+  - String:          '() intrinsic'
+...
+--- !Passed
+Pass:            loop-delete
+Name:            Invariant
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 198, 
+                   Column: 2 }
+Function:        _Z22_mm_srli_si128_emu_old11__Int64x2_ti
+Args:
+  - String:          Loop deleted because it is invariant
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 220, 
+                   Column: 9 }
+Function:        _Z22_mm_srli_si128_emu_old11__Int64x2_ti
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 196, 
+                       Column: 13 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 220, 
+                   Column: 9 }
+Function:        _Z22_mm_srli_si128_emu_old11__Int64x2_ti
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 200, 
+                       Column: 13 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 220, 
+                   Column: 9 }
+Function:        _Z22_mm_srli_si128_emu_old11__Int64x2_ti
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 200, 
+                       Column: 13 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 220, 
+                   Column: 9 }
+Function:        _Z22_mm_srli_si128_emu_old11__Int64x2_ti
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 196, 
+                       Column: 13 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                   Column: 7 }
+Function:        _Z20_mm_shuffle_epi8_emu11__Int64x2_tS_
+Args:
+  - String:          'hoisting '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                       Column: 7 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 254, 
+                   Column: 30 }
+Function:        _Z20_mm_shuffle_epi8_emu11__Int64x2_tS_
+Args:
+  - String:          'hoisting '
+  - Inst:            bitcast
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 254, 
+                       Column: 30 }
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            FullyUnrolled
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 246, 
+                   Column: 2 }
+Function:        _Z20_mm_shuffle_epi8_emu11__Int64x2_tS_
+Args:
+  - String:          'completely unrolled loop with '
+  - UnrollCount:     '16'
+  - String:          ' iterations'
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                   Column: 7 }
+Function:        _Z20_mm_shuffle_epi8_emu11__Int64x2_tS_
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  trunc
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                       Column: 7 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                   Column: 7 }
+Function:        _Z20_mm_shuffle_epi8_emu11__Int64x2_tS_
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  trunc
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                       Column: 7 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                   Column: 7 }
+Function:        _Z20_mm_shuffle_epi8_emu11__Int64x2_tS_
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  trunc
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                       Column: 7 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                   Column: 7 }
+Function:        _Z20_mm_shuffle_epi8_emu11__Int64x2_tS_
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  trunc
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                       Column: 7 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                   Column: 7 }
+Function:        _Z20_mm_shuffle_epi8_emu11__Int64x2_tS_
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  trunc
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                       Column: 7 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                   Column: 7 }
+Function:        _Z20_mm_shuffle_epi8_emu11__Int64x2_tS_
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  trunc
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                       Column: 7 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                   Column: 7 }
+Function:        _Z20_mm_shuffle_epi8_emu11__Int64x2_tS_
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  trunc
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                       Column: 7 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                   Column: 7 }
+Function:        _Z20_mm_shuffle_epi8_emu11__Int64x2_tS_
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  trunc
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                       Column: 7 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                   Column: 7 }
+Function:        _Z20_mm_shuffle_epi8_emu11__Int64x2_tS_
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  trunc
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                       Column: 7 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                   Column: 7 }
+Function:        _Z20_mm_shuffle_epi8_emu11__Int64x2_tS_
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  trunc
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                       Column: 7 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                   Column: 7 }
+Function:        _Z20_mm_shuffle_epi8_emu11__Int64x2_tS_
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  trunc
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                       Column: 7 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                   Column: 7 }
+Function:        _Z20_mm_shuffle_epi8_emu11__Int64x2_tS_
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  trunc
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                       Column: 7 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                   Column: 7 }
+Function:        _Z20_mm_shuffle_epi8_emu11__Int64x2_tS_
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  trunc
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                       Column: 7 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                   Column: 7 }
+Function:        _Z20_mm_shuffle_epi8_emu11__Int64x2_tS_
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  trunc
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                       Column: 7 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                   Column: 7 }
+Function:        _Z20_mm_shuffle_epi8_emu11__Int64x2_tS_
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  trunc
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                       Column: 7 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                   Column: 7 }
+Function:        _Z20_mm_shuffle_epi8_emu11__Int64x2_tS_
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  trunc
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 248, 
+                       Column: 7 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 272, 
+                   Column: 9 }
+Function:        _Z20_mm_shuffle_epi8_emu11__Int64x2_tS_
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 250, 
+                       Column: 28 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 272, 
+                   Column: 9 }
+Function:        _Z20_mm_shuffle_epi8_emu11__Int64x2_tS_
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 254, 
+                       Column: 28 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 272, 
+                   Column: 9 }
+Function:        _Z20_mm_shuffle_epi8_emu11__Int64x2_tS_
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 250, 
+                       Column: 28 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 272, 
+                   Column: 9 }
+Function:        _Z20_mm_shuffle_epi8_emu11__Int64x2_tS_
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 254, 
+                       Column: 28 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 272, 
+                   Column: 9 }
+Function:        _Z20_mm_shuffle_epi8_emu11__Int64x2_tS_
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 250, 
+                       Column: 28 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 272, 
+                   Column: 9 }
+Function:        _Z20_mm_shuffle_epi8_emu11__Int64x2_tS_
+Args:
+  - String:          'load of type '
+  - Type:            '<2 x i64>'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 254, 
+                       Column: 28 }
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 277, 
+                   Column: 31 }
+Function:        _Z19lazyLengthHash_portmm
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_set_epi64x_emumm
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 89, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z19lazyLengthHash_portmm
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 276, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '750'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          lazyLengthHash_port
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '31'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 290, 
+                   Column: 15 }
+Function:        _Z29precompReduction64_si128_port11__Int64x2_t
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z29precompReduction64_si128_port11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 283, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          precompReduction64_si128_port
+  - String:          ':'
+  - Line:            '7'
+  - String:          ':'
+  - Column:          '15'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 291, 
+                   Column: 24 }
+Function:        _Z29precompReduction64_si128_port11__Int64x2_t
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z29precompReduction64_si128_port11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 283, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          precompReduction64_si128_port
+  - String:          ':'
+  - Line:            '8'
+  - String:          ':'
+  - Column:          '24'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 296, 
+                   Column: 16 }
+Function:        _Z23precompReduction64_port11__Int64x2_t
+Args:
+  - String:          ''''
+  - Callee:          _Z29precompReduction64_si128_port11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 283, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z23precompReduction64_port11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 295, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '0'
+  - String:          ', threshold='
+  - Threshold:       '750'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          precompReduction64_port
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '16'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 297, 
+                   Column: 9 }
+Function:        _Z23precompReduction64_port11__Int64x2_t
+Args:
+  - String:          ''''
+  - Callee:          _Z21_mm_cvtsi128_si64_emuRK11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 105, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z23precompReduction64_port11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 295, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          precompReduction64_port
+  - String:          ':'
+  - Line:            '2'
+  - String:          ':'
+  - Column:          '9'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 324, 
+                   Column: 16 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '17'
+  - String:          ':'
+  - Column:          '16'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 330, 
+                   Column: 29 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z21_mm_cvtsi128_si64_emuRK11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 105, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '23'
+  - String:          ':'
+  - Column:          '29'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 348, 
+                   Column: 26 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '41'
+  - String:          ':'
+  - Column:          '26'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 349, 
+                   Column: 26 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '42'
+  - String:          ':'
+  - Column:          '26'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 350, 
+                   Column: 25 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '43'
+  - String:          ':'
+  - Column:          '25'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 352, 
+                   Column: 10 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '45'
+  - String:          ':'
+  - Column:          '10'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 363, 
+                   Column: 27 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '56'
+  - String:          ':'
+  - Column:          '27'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 365, 
+                   Column: 27 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '58'
+  - String:          ':'
+  - Column:          '27'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 367, 
+                   Column: 27 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '60'
+  - String:          ':'
+  - Column:          '27'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 368, 
+                   Column: 26 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '61'
+  - String:          ':'
+  - Column:          '26'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 370, 
+                   Column: 10 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '63'
+  - String:          ':'
+  - Column:          '10'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 373, 
+                   Column: 27 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '66'
+  - String:          ':'
+  - Column:          '27'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 374, 
+                   Column: 4 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z19_mm_store_si128_emuPv11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 237, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '67'
+  - String:          ':'
+  - Column:          '4'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 375, 
+                   Column: 4 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z19_mm_store_si128_emuPv11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 237, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '68'
+  - String:          ':'
+  - Column:          '4'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 379, 
+                   Column: 26 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '72'
+  - String:          ':'
+  - Column:          '26'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 380, 
+                   Column: 26 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '73'
+  - String:          ':'
+  - Column:          '26'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 381, 
+                   Column: 25 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '74'
+  - String:          ':'
+  - Column:          '25'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 383, 
+                   Column: 10 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '76'
+  - String:          ':'
+  - Column:          '10'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 385, 
+                   Column: 10 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '78'
+  - String:          ':'
+  - Column:          '10'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 388, 
+                   Column: 27 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '81'
+  - String:          ':'
+  - Column:          '27'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 390, 
+                   Column: 27 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '83'
+  - String:          ':'
+  - Column:          '27'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 392, 
+                   Column: 27 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '85'
+  - String:          ':'
+  - Column:          '27'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 393, 
+                   Column: 26 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '86'
+  - String:          ':'
+  - Column:          '26'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 394, 
+                   Column: 10 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '87'
+  - String:          ':'
+  - Column:          '10'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 397, 
+                   Column: 27 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '90'
+  - String:          ':'
+  - Column:          '27'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 398, 
+                   Column: 4 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z19_mm_store_si128_emuPv11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 237, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '91'
+  - String:          ':'
+  - Column:          '4'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 399, 
+                   Column: 4 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z19_mm_store_si128_emuPv11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 237, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '92'
+  - String:          ':'
+  - Column:          '4'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 403, 
+                   Column: 26 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '96'
+  - String:          ':'
+  - Column:          '26'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 404, 
+                   Column: 26 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '97'
+  - String:          ':'
+  - Column:          '26'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 405, 
+                   Column: 25 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '98'
+  - String:          ':'
+  - Column:          '25'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 406, 
+                   Column: 10 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '99'
+  - String:          ':'
+  - Column:          '10'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 409, 
+                   Column: 27 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '102'
+  - String:          ':'
+  - Column:          '27'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 411, 
+                   Column: 27 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '104'
+  - String:          ':'
+  - Column:          '27'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 413, 
+                   Column: 27 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '106'
+  - String:          ':'
+  - Column:          '27'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 414, 
+                   Column: 26 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '107'
+  - String:          ':'
+  - Column:          '26'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 416, 
+                   Column: 10 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '109'
+  - String:          ':'
+  - Column:          '10'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 418, 
+                   Column: 10 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '111'
+  - String:          ':'
+  - Column:          '10'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 421, 
+                   Column: 27 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '114'
+  - String:          ':'
+  - Column:          '27'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 422, 
+                   Column: 4 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z19_mm_store_si128_emuPv11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 237, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '115'
+  - String:          ':'
+  - Column:          '4'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 423, 
+                   Column: 4 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z19_mm_store_si128_emuPv11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 237, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '116'
+  - String:          ':'
+  - Column:          '4'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 427, 
+                   Column: 26 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '120'
+  - String:          ':'
+  - Column:          '26'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 428, 
+                   Column: 26 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '121'
+  - String:          ':'
+  - Column:          '26'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 429, 
+                   Column: 25 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '122'
+  - String:          ':'
+  - Column:          '25'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 434, 
+                   Column: 10 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '127'
+  - String:          ':'
+  - Column:          '10'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 436, 
+                   Column: 29 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z21_mm_cvtsi128_si64_emuRK11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 105, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '129'
+  - String:          ':'
+  - Column:          '29'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 438, 
+                   Column: 10 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '131'
+  - String:          ':'
+  - Column:          '10'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 441, 
+                   Column: 27 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '134'
+  - String:          ':'
+  - Column:          '27'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 445, 
+                   Column: 28 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '138'
+  - String:          ':'
+  - Column:          '28'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 447, 
+                   Column: 28 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '140'
+  - String:          ':'
+  - Column:          '28'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 448, 
+                   Column: 27 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '141'
+  - String:          ':'
+  - Column:          '27'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 450, 
+                   Column: 11 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '143'
+  - String:          ':'
+  - Column:          '11'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 452, 
+                   Column: 11 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '145'
+  - String:          ':'
+  - Column:          '11'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 455, 
+                   Column: 28 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '148'
+  - String:          ':'
+  - Column:          '28'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 456, 
+                   Column: 5 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z19_mm_store_si128_emuPv11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 237, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '149'
+  - String:          ':'
+  - Column:          '5'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 460, 
+                   Column: 28 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '153'
+  - String:          ':'
+  - Column:          '28'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 461, 
+                   Column: 28 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '154'
+  - String:          ':'
+  - Column:          '28'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 462, 
+                   Column: 11 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '155'
+  - String:          ':'
+  - Column:          '11'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 463, 
+                   Column: 5 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z19_mm_store_si128_emuPv11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 237, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '156'
+  - String:          ':'
+  - Column:          '5'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 465, 
+                   Column: 4 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z19_mm_store_si128_emuPv11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 237, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '158'
+  - String:          ':'
+  - Column:          '4'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 473, 
+                   Column: 20 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '166'
+  - String:          ':'
+  - Column:          '20'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 474, 
+                   Column: 20 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '167'
+  - String:          ':'
+  - Column:          '20'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 489, 
+                   Column: 27 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '182'
+  - String:          ':'
+  - Column:          '27'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 491, 
+                   Column: 27 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '184'
+  - String:          ':'
+  - Column:          '27'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 493, 
+                   Column: 27 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '186'
+  - String:          ':'
+  - Column:          '27'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 494, 
+                   Column: 4 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z19_mm_store_si128_emuPv11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 237, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '187'
+  - String:          ':'
+  - Column:          '4'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 495, 
+                   Column: 4 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z19_mm_store_si128_emuPv11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 237, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '188'
+  - String:          ':'
+  - Column:          '4'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 540, 
+                   Column: 27 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '233'
+  - String:          ':'
+  - Column:          '27'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 542, 
+                   Column: 27 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '235'
+  - String:          ':'
+  - Column:          '27'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 544, 
+                   Column: 27 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '237'
+  - String:          ':'
+  - Column:          '27'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 545, 
+                   Column: 4 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z19_mm_store_si128_emuPv11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 237, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '238'
+  - String:          ':'
+  - Column:          '4'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 546, 
+                   Column: 4 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z19_mm_store_si128_emuPv11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 237, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '239'
+  - String:          ':'
+  - Column:          '4'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 514, 
+                   Column: 16 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '1181'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '207'
+  - String:          ':'
+  - Column:          '16'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 519, 
+                   Column: 30 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '212'
+  - String:          ':'
+  - Column:          '30'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 520, 
+                   Column: 29 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '213'
+  - String:          ':'
+  - Column:          '29'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 522, 
+                   Column: 14 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '215'
+  - String:          ':'
+  - Column:          '14'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 526, 
+                   Column: 24 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '219'
+  - String:          ':'
+  - Column:          '24'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 584, 
+                   Column: 40 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '277'
+  - String:          ':'
+  - Column:          '40'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 585, 
+                   Column: 40 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '278'
+  - String:          ':'
+  - Column:          '40'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 587, 
+                   Column: 17 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z19_mm_store_si128_emuPv11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 237, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '280'
+  - String:          ':'
+  - Column:          '17'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 588, 
+                   Column: 17 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z19_mm_store_si128_emuPv11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 237, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '281'
+  - String:          ':'
+  - Column:          '17'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 561, 
+                   Column: 18 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '1181'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '254'
+  - String:          ':'
+  - Column:          '18'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 564, 
+                   Column: 28 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '257'
+  - String:          ':'
+  - Column:          '28'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 565, 
+                   Column: 15 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '258'
+  - String:          ':'
+  - Column:          '15'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 568, 
+                   Column: 31 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z21_mm_cvtsi128_si64_emuRK11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 105, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '261'
+  - String:          ':'
+  - Column:          '31'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 570, 
+                   Column: 12 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '263'
+  - String:          ':'
+  - Column:          '12'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 574, 
+                   Column: 28 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '267'
+  - String:          ':'
+  - Column:          '28'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 575, 
+                   Column: 27 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '268'
+  - String:          ':'
+  - Column:          '27'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 578, 
+                   Column: 12 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '271'
+  - String:          ':'
+  - Column:          '12'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 592, 
+                   Column: 26 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '285'
+  - String:          ':'
+  - Column:          '26'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 593, 
+                   Column: 26 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '286'
+  - String:          ':'
+  - Column:          '26'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 594, 
+                   Column: 27 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '287'
+  - String:          ':'
+  - Column:          '27'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 595, 
+                   Column: 26 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z18_mm_load_si128_emuPKv
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 230, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '288'
+  - String:          ':'
+  - Column:          '26'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 597, 
+                   Column: 25 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '290'
+  - String:          ':'
+  - Column:          '25'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 599, 
+                   Column: 10 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '292'
+  - String:          ':'
+  - Column:          '10'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 601, 
+                   Column: 27 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '294'
+  - String:          ':'
+  - Column:          '27'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 607, 
+                   Column: 27 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '300'
+  - String:          ':'
+  - Column:          '27'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 608, 
+                   Column: 4 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z19_mm_store_si128_emuPv11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 237, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '301'
+  - String:          ':'
+  - Column:          '4'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 609, 
+                   Column: 4 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          ''''
+  - Callee:          _Z19_mm_store_si128_emuPv11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 237, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          __verusclmulwithoutreduction64alignedrepeat_port2_2
+  - String:          ':'
+  - Line:            '302'
+  - String:          ':'
+  - Column:          '4'
+  - String:          ';'
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 569, 
+                   Column: 62 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          'hoisting '
+  - Inst:            shl
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 569, 
+                       Column: 62 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 569, 
+                   Column: 62 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          'hoisting '
+  - Inst:            ashr
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 569, 
+                       Column: 62 }
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            FullyUnrolled
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 557, 
+                   Column: 3 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          'completely unrolled loop with '
+  - UnrollCount:     '8'
+  - String:          ' iterations'
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            FullyUnrolled
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 510, 
+                   Column: 4 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          'completely unrolled loop with '
+  - UnrollCount:     '8'
+  - String:          ' iterations'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 622, 
+                   Column: 20 }
+Function:        _Z19verusclhash_port2_2PvPKhmPjS2_
+Args:
+  - String:          ''''
+  - Callee:          _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 308, 
+                       Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          _Z19verusclhash_port2_2PvPKhmPjS2_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 617, 
+                       Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '625'
+  - String:          ', threshold='
+  - Threshold:       '625'
+  - String:          ')'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 626, 
+                   Column: 11 }
+Function:        _Z19verusclhash_port2_2PvPKhmPjS2_
+Args:
+  - String:          ''''
+  - Callee:          _Z17_mm_xor_si128_emu11__Int64x2_tS_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 224, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z19verusclhash_port2_2PvPKhmPjS2_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 617, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '563'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          verusclhash_port2_2
+  - String:          ':'
+  - Line:            '9'
+  - String:          ':'
+  - Column:          '11'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 628, 
+                   Column: 12 }
+Function:        _Z19verusclhash_port2_2PvPKhmPjS2_
+Args:
+  - String:          ''''
+  - Callee:          _Z23precompReduction64_port11__Int64x2_t
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 295, 
+                       Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          _Z19verusclhash_port2_2PvPKhmPjS2_
+    DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 617, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '0'
+  - String:          ', threshold='
+  - Threshold:       '750'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          verusclhash_port2_2
+  - String:          ':'
+  - Line:            '11'
+  - String:          ':'
+  - Column:          '12'
+  - String:          ';'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 91, Column: 27 }
+Function:        _Z18_mm_set_epi64x_emumm
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            LoopContainsSwitch
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 346, 
+                   Column: 7 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          'loop not vectorized: '
+  - String:          loop contains a switch statement
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CFGNotUnderstood
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 326, 
+                   Column: 2 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          'loop not vectorized: '
+  - String:          loop control flow is not understood by vectorizer
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantIdentifyArrayBounds
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 326, 
+                   Column: 2 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          'loop not vectorized: '
+  - String:          cannot identify array bounds
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 326, 
+                   Column: 2 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          loop not vectorized
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            UnsupportedType
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 604, 
+                   Column: 14 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          'Cannot SLP vectorize list: type '
+  - String:          '<2 x i64> is unsupported by vectorizer'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            UnsupportedType
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 232, 
+                   Column: 8 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          'Cannot SLP vectorize list: type '
+  - String:          '<2 x i64> is unsupported by vectorizer'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            UnsupportedType
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 232, 
+                   Column: 8 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          'Cannot SLP vectorize list: type '
+  - String:          '<2 x i64> is unsupported by vectorizer'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            UnsupportedType
+DebugLoc:        { File: './sse2neon.h', Line: 4317, Column: 12 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          'Cannot SLP vectorize list: type '
+  - String:          '<4 x i32> is unsupported by vectorizer'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            UnsupportedType
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 232, 
+                   Column: 8 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          'Cannot SLP vectorize list: type '
+  - String:          '<2 x i64> is unsupported by vectorizer'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            UnsupportedType
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 232, 
+                   Column: 8 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          'Cannot SLP vectorize list: type '
+  - String:          '<2 x i64> is unsupported by vectorizer'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            UnsupportedType
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 232, 
+                   Column: 8 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          'Cannot SLP vectorize list: type '
+  - String:          '<2 x i64> is unsupported by vectorizer'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            UnsupportedType
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 232, 
+                   Column: 8 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          'Cannot SLP vectorize list: type '
+  - String:          '<2 x i64> is unsupported by vectorizer'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            UnsupportedType
+DebugLoc:        { File: './sse2neon.h', Line: 4317, Column: 12 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          'Cannot SLP vectorize list: type '
+  - String:          '<4 x i32> is unsupported by vectorizer'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            UnsupportedType
+DebugLoc:        { File: './sse2neon.h', Line: 4317, Column: 12 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          'Cannot SLP vectorize list: type '
+  - String:          '<4 x i32> is unsupported by vectorizer'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            UnsupportedType
+DebugLoc:        { File: './sse2neon.h', Line: 4317, Column: 12 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          'Cannot SLP vectorize list: type '
+  - String:          '<4 x i32> is unsupported by vectorizer'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            UnsupportedType
+DebugLoc:        { File: './sse2neon.h', Line: 4317, Column: 12 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          'Cannot SLP vectorize list: type '
+  - String:          '<4 x i32> is unsupported by vectorizer'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            UnsupportedType
+DebugLoc:        { File: './sse2neon.h', Line: 4317, Column: 12 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          'Cannot SLP vectorize list: type '
+  - String:          '<4 x i32> is unsupported by vectorizer'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            UnsupportedType
+DebugLoc:        { File: './sse2neon.h', Line: 4317, Column: 12 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          'Cannot SLP vectorize list: type '
+  - String:          '<4 x i32> is unsupported by vectorizer'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            UnsupportedType
+DebugLoc:        { File: './sse2neon.h', Line: 4317, Column: 12 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          'Cannot SLP vectorize list: type '
+  - String:          '<4 x i32> is unsupported by vectorizer'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            UnsupportedType
+DebugLoc:        { File: './sse2neon.h', Line: 4317, Column: 12 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          'Cannot SLP vectorize list: type '
+  - String:          '<4 x i32> is unsupported by vectorizer'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'verus/verus_clhash_portable.cpp', Line: 337, 
+                   Column: 33 }
+Function:        _Z51__verusclmulwithoutreduction64alignedrepeat_port2_2P11__Int64x2_tPKS_mPjS3_
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...

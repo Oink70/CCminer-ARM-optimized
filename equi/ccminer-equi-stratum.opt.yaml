@@ -1,0 +1,4321 @@
+--- !Passed
+Pass:            loop-unroll
+Name:            FullyUnrolled
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 3 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'completely unrolled loop with '
+  - UnrollCount:     '28'
+  - String:          ' iterations'
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  '0'
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  '0'
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  '0'
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  '0'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 48, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 48, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 48, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 48, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 48, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 48, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 48, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 48, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 51, Column: 25 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 49, Column: 17 }
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 65, Column: 19 }
+Function:        equi_network_diff
+Args:
+  - String:          ''''
+  - Callee:          _ZL6swab32j
+    DebugLoc:        { File: './miner.h', Line: 141, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          equi_network_diff
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 58, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '487'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          equi_network_diff
+  - String:          ':'
+  - Line:            '8'
+  - String:          ':'
+  - Column:          '19'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 67, Column: 19 }
+Function:        equi_network_diff
+Args:
+  - String:          ''''
+  - Callee:          _ZL6swab32j
+    DebugLoc:        { File: './miner.h', Line: 141, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          equi_network_diff
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 58, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '487'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          equi_network_diff
+  - String:          ':'
+  - Line:            '10'
+  - String:          ':'
+  - Column:          '19'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 74, Column: 13 }
+Function:        equi_network_diff
+Args:
+  - String:          ''''
+  - Callee:          _Z19target_to_diff_equiPj
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 22, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          equi_network_diff
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 58, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '15'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          equi_network_diff
+  - String:          ':'
+  - Line:            '17'
+  - String:          ':'
+  - Column:          '13'
+  - String:          ';'
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            FullyUnrolled
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 71, Column: 2 }
+Function:        equi_network_diff
+Args:
+  - String:          'completely unrolled loop with '
+  - UnrollCount:     '8'
+  - String:          ' iterations'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 82, Column: 2 }
+Function:        equi_work_set_target
+Args:
+  - String:          ''''
+  - Callee:          _Z19diff_to_target_equiPjd
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 37, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          equi_work_set_target
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 79, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '555'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 92, Column: 45 }
+Function:        equi_stratum_set_target
+Args:
+  - Callee:          json_array_get
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_set_target
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 89, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 92, Column: 27 }
+Function:        equi_stratum_set_target
+Args:
+  - Callee:          json_string_value
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_set_target
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 89, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 96, Column: 2 }
+Function:        equi_stratum_set_target
+Args:
+  - Callee:          hex2bin
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_set_target
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 89, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 106, Column: 2 }
+Function:        equi_stratum_set_target
+Args:
+  - Callee:          pthread_mutex_lock
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_set_target
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 89, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 108, Column: 2 }
+Function:        equi_stratum_set_target
+Args:
+  - Callee:          pthread_mutex_unlock
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_set_target
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 89, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 92, Column: 45 }
+Function:        equi_stratum_set_target
+Args:
+  - Callee:          json_array_get
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_set_target
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 89, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 92, Column: 27 }
+Function:        equi_stratum_set_target
+Args:
+  - Callee:          json_string_value
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_set_target
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 89, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 96, Column: 2 }
+Function:        equi_stratum_set_target
+Args:
+  - Callee:          hex2bin
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_set_target
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 89, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 106, Column: 2 }
+Function:        equi_stratum_set_target
+Args:
+  - Callee:          pthread_mutex_lock
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_set_target
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 89, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 108, Column: 2 }
+Function:        equi_stratum_set_target
+Args:
+  - Callee:          pthread_mutex_unlock
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_set_target
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 89, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 107, Column: 20 }
+Function:        equi_stratum_set_target
+Args:
+  - String:          ''''
+  - Callee:          _Z19target_to_diff_equiPj
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 22, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          equi_stratum_set_target
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 89, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '15'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          equi_stratum_set_target
+  - String:          ':'
+  - Line:            '19'
+  - String:          ':'
+  - Column:          '20'
+  - String:          ';'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 93, Column: 21 }
+Function:        equi_stratum_set_target
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 92, Column: 27 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 101, Column: 21 }
+Function:        equi_stratum_set_target
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 96, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 25, Column: 13 }
+Function:        equi_stratum_set_target
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 101, Column: 19 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 26, Column: 13 }
+Function:        equi_stratum_set_target
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 101, Column: 19 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 27, Column: 13 }
+Function:        equi_stratum_set_target
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 101, Column: 19 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 28, Column: 13 }
+Function:        equi_stratum_set_target
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 101, Column: 19 }
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 122, Column: 29 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_array_get
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 122, Column: 11 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_string_value
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 123, Column: 30 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_array_get
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 123, Column: 12 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_string_value
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 124, Column: 31 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_array_get
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 124, Column: 13 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_string_value
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 125, Column: 29 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_array_get
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 125, Column: 11 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_string_value
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 126, Column: 29 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_array_get
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 126, Column: 11 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_string_value
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 127, Column: 28 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_array_get
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 127, Column: 10 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_string_value
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 128, Column: 28 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_array_get
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 128, Column: 10 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_string_value
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 129, Column: 10 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_array_get
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 129, Column: 10 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_array_get
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 130, Column: 38 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_array_get
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 130, Column: 20 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_string_value
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 133, Column: 6 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          strlen
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 133, Column: 32 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          strlen
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 134, Column: 6 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          strlen
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 134, Column: 30 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          strlen
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 135, Column: 6 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          strlen
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 135, Column: 28 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          strlen
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 136, Column: 3 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          applog
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 139, Column: 5 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          hex2bin
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 141, Column: 2 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          hex2bin
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 142, Column: 24 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          time
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 146, Column: 4 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          applog
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 149, Column: 2 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          pthread_mutex_lock
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 150, Column: 2 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          hex2bin
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 151, Column: 2 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          hex2bin
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 153, Column: 16 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          strlen
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 154, Column: 16 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          strlen
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 158, Column: 32 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          realloc
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 159, Column: 2 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          hex2bin
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 160, Column: 2 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          hex2bin
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 163, Column: 27 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          strcmp
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 168, Column: 3 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          free
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 169, Column: 2 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          free
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 173, Column: 2 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          free
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 174, Column: 21 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          strdup
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 176, Column: 2 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          hex2bin
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 177, Column: 2 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          hex2bin
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 181, Column: 2 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          pthread_mutex_unlock
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 122, Column: 29 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_array_get
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 122, Column: 11 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_string_value
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 123, Column: 30 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_array_get
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 123, Column: 12 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_string_value
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 124, Column: 31 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_array_get
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 124, Column: 13 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_string_value
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 125, Column: 29 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_array_get
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 125, Column: 11 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_string_value
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 126, Column: 29 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_array_get
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 126, Column: 11 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_string_value
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 127, Column: 28 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_array_get
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 127, Column: 10 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_string_value
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 128, Column: 28 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_array_get
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 128, Column: 10 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_string_value
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 129, Column: 10 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_array_get
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 129, Column: 10 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_array_get
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 130, Column: 38 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_array_get
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 130, Column: 20 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          json_string_value
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 133, Column: 6 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          strlen
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 133, Column: 32 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          strlen
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 134, Column: 6 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          strlen
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 134, Column: 30 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          strlen
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 135, Column: 6 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          strlen
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 135, Column: 28 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          strlen
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 136, Column: 3 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          applog
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 139, Column: 5 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          hex2bin
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 141, Column: 2 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          hex2bin
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 142, Column: 24 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          time
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 146, Column: 4 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          applog
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 149, Column: 2 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          pthread_mutex_lock
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 150, Column: 2 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          hex2bin
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 151, Column: 2 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          hex2bin
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 153, Column: 16 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          strlen
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 154, Column: 16 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          strlen
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 158, Column: 32 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          realloc
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 159, Column: 2 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          hex2bin
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 160, Column: 2 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          hex2bin
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 163, Column: 27 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          strcmp
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 168, Column: 3 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          free
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 169, Column: 2 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          free
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 173, Column: 2 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          free
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 174, Column: 21 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          strdup
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 176, Column: 2 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          hex2bin
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 177, Column: 2 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          hex2bin
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 181, Column: 2 }
+Function:        equi_stratum_notify
+Args:
+  - Callee:          pthread_mutex_unlock
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_notify
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 117, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 167, Column: 28 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'sinking '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 167, Column: 28 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 167, Column: 28 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 167, Column: 28 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 167, Column: 28 }
+Function:        equi_stratum_notify
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 168, Column: 18 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 168, Column: 18 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 168, Column: 18 }
+Function:        equi_stratum_notify
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 168, Column: 18 }
+Function:        equi_stratum_notify
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 167, Column: 28 }
+Function:        equi_stratum_notify
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 129, Column: 10 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 129, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 142, Column: 10 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 141, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 143, Column: 20 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 142, Column: 24 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 145, Column: 7 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 142, Column: 24 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 156, Column: 9 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            i64
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 151, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 156, Column: 30 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            i64
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 151, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 158, Column: 50 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 151, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 160, Column: 20 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 158, Column: 21 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 159, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 162, Column: 32 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 160, Column: 20 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 160, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 162, Column: 77 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            i64
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 156, Column: 9 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 160, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 163, Column: 17 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 160, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 164, Column: 38 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            i64
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 156, Column: 30 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 160, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 165, Column: 19 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 162, Column: 32 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 164, Column: 3 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadPRE
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 165, Column: 19 }
+Function:        equi_stratum_notify
+Args:
+  - String:          load eliminated by PRE
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 165, Column: 63 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 164, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 165, Column: 63 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 160, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 165, Column: 78 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            i64
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 162, Column: 77 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 164, Column: 3 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadPRE
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 165, Column: 78 }
+Function:        equi_stratum_notify
+Args:
+  - String:          load eliminated by PRE
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 167, Column: 28 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 165, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 168, Column: 18 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            'i8**'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 168, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 168, Column: 18 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            'i8**'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 165, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 167, Column: 28 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 167, Column: 28 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 168, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 169, Column: 17 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 168, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 169, Column: 17 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 165, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 173, Column: 17 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 163, Column: 17 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 169, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 180, Column: 25 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 177, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 129, Column: 10 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 129, Column: 10 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 142, Column: 10 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 141, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 143, Column: 20 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 142, Column: 24 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 145, Column: 7 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 142, Column: 24 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 156, Column: 9 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            i64
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 151, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 156, Column: 30 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            i64
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 151, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 158, Column: 50 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 151, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 160, Column: 20 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 158, Column: 21 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 159, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 162, Column: 32 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 160, Column: 20 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 160, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 162, Column: 77 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            i64
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 156, Column: 9 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 160, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 163, Column: 17 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 160, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 164, Column: 38 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            i64
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 156, Column: 30 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 160, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 165, Column: 19 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 162, Column: 32 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 164, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 165, Column: 78 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            i64
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 162, Column: 77 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 164, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 165, Column: 63 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 164, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 165, Column: 63 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 160, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 167, Column: 28 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 165, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 168, Column: 18 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            'i8**'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 168, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 168, Column: 18 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            'i8**'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 165, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 167, Column: 28 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 167, Column: 28 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 168, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 169, Column: 17 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 168, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 169, Column: 17 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 165, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 173, Column: 17 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            'i8*'
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 163, Column: 17 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 169, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 180, Column: 25 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 177, Column: 2 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 168, Column: 18 }
+Function:        equi_stratum_notify
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 167, Column: 28 }
+Function:        equi_stratum_notify
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: '/usr/include/jansson.h', Line: 230, Column: 12 }
+Function:        _ZL15json_object_setP6json_tPKcS0_
+Args:
+  - Callee:          json_object_set_new
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL15json_object_setP6json_tPKcS0_
+    DebugLoc:        { File: '/usr/include/jansson.h', Line: 229, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: '/usr/include/jansson.h', Line: 230, Column: 12 }
+Function:        _ZL15json_object_setP6json_tPKcS0_
+Args:
+  - Callee:          json_object_set_new
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL15json_object_setP6json_tPKcS0_
+    DebugLoc:        { File: '/usr/include/jansson.h', Line: 229, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: '/usr/include/jansson.h', Line: 230, Column: 45 }
+Function:        _ZL15json_object_setP6json_tPKcS0_
+Args:
+  - String:          ''''
+  - Callee:          _ZL11json_increfP6json_t
+  - String:          ''' inlined into '''
+  - Caller:          _ZL15json_object_setP6json_tPKcS0_
+    DebugLoc:        { File: '/usr/include/jansson.h', Line: 229, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-15005'
+  - String:          ', threshold='
+  - Threshold:       '325'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          json_object_set
+  - String:          ':'
+  - Line:            '2'
+  - String:          ':'
+  - Column:          '45'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: '/usr/include/jansson.h', Line: 135, Column: 9 }
+Function:        _ZL11json_decrefP6json_t
+Args:
+  - Callee:          json_delete
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11json_decrefP6json_t
+    DebugLoc:        { File: '/usr/include/jansson.h', Line: 133, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: '/usr/include/jansson.h', Line: 135, Column: 9 }
+Function:        _ZL11json_decrefP6json_t
+Args:
+  - Callee:          json_delete
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL11json_decrefP6json_t
+    DebugLoc:        { File: '/usr/include/jansson.h', Line: 133, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 196, Column: 8 }
+Function:        equi_stratum_show_message
+Args:
+  - Callee:          json_array_get
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_show_message
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 191, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 198, Column: 22 }
+Function:        equi_stratum_show_message
+Args:
+  - Callee:          json_string_value
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_show_message
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 191, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 202, Column: 13 }
+Function:        equi_stratum_show_message
+Args:
+  - Callee:          __isoc99_sscanf
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_show_message
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 191, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 204, Column: 29 }
+Function:        equi_stratum_show_message
+Args:
+  - Callee:          applog
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_show_message
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 191, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 211, Column: 8 }
+Function:        equi_stratum_show_message
+Args:
+  - Callee:          json_object
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_show_message
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 191, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 213, Column: 36 }
+Function:        equi_stratum_show_message
+Args:
+  - Callee:          json_null
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_show_message
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 191, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 213, Column: 2 }
+Function:        equi_stratum_show_message
+Args:
+  - Callee:          json_object_set_new
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_show_message
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 191, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 214, Column: 37 }
+Function:        equi_stratum_show_message
+Args:
+  - Callee:          json_true
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_show_message
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 191, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 214, Column: 2 }
+Function:        equi_stratum_show_message
+Args:
+  - Callee:          json_object_set_new
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_show_message
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 191, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 215, Column: 6 }
+Function:        equi_stratum_show_message
+Args:
+  - Callee:          json_dumps
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_show_message
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 191, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 216, Column: 8 }
+Function:        equi_stratum_show_message
+Args:
+  - Callee:          stratum_send_line
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_show_message
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 191, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 218, Column: 2 }
+Function:        equi_stratum_show_message
+Args:
+  - Callee:          free
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_show_message
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 191, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 196, Column: 8 }
+Function:        equi_stratum_show_message
+Args:
+  - Callee:          json_array_get
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_show_message
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 191, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 198, Column: 22 }
+Function:        equi_stratum_show_message
+Args:
+  - Callee:          json_string_value
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_show_message
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 191, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 202, Column: 13 }
+Function:        equi_stratum_show_message
+Args:
+  - Callee:          __isoc99_sscanf
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_show_message
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 191, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 204, Column: 29 }
+Function:        equi_stratum_show_message
+Args:
+  - Callee:          applog
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_show_message
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 191, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 211, Column: 8 }
+Function:        equi_stratum_show_message
+Args:
+  - Callee:          json_object
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_show_message
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 191, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 213, Column: 36 }
+Function:        equi_stratum_show_message
+Args:
+  - Callee:          json_null
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_show_message
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 191, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 213, Column: 2 }
+Function:        equi_stratum_show_message
+Args:
+  - Callee:          json_object_set_new
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_show_message
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 191, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 214, Column: 37 }
+Function:        equi_stratum_show_message
+Args:
+  - Callee:          json_true
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_show_message
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 191, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 214, Column: 2 }
+Function:        equi_stratum_show_message
+Args:
+  - Callee:          json_object_set_new
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_show_message
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 191, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 215, Column: 6 }
+Function:        equi_stratum_show_message
+Args:
+  - Callee:          json_dumps
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_show_message
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 191, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 216, Column: 8 }
+Function:        equi_stratum_show_message
+Args:
+  - Callee:          stratum_send_line
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_show_message
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 191, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 218, Column: 2 }
+Function:        equi_stratum_show_message
+Args:
+  - Callee:          free
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_show_message
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 191, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 212, Column: 2 }
+Function:        equi_stratum_show_message
+Args:
+  - String:          ''''
+  - Callee:          _ZL15json_object_setP6json_tPKcS0_
+  - String:          ''' inlined into '''
+  - Caller:          equi_stratum_show_message
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 191, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-14975'
+  - String:          ', threshold='
+  - Threshold:       '325'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          equi_stratum_show_message
+  - String:          ':'
+  - Line:            '22'
+  - String:          ':'
+  - Column:          '2'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 217, Column: 2 }
+Function:        equi_stratum_show_message
+Args:
+  - String:          ''''
+  - Callee:          _ZL11json_decrefP6json_t
+  - String:          ''' inlined into '''
+  - Caller:          equi_stratum_show_message
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 191, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-14960'
+  - String:          ', threshold='
+  - Threshold:       '325'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          equi_stratum_show_message
+  - String:          ':'
+  - Line:            '27'
+  - String:          ':'
+  - Column:          '2'
+  - String:          ';'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 199, Column: 15 }
+Function:        equi_stratum_show_message
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 198, Column: 22 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 203, Column: 8 }
+Function:        equi_stratum_show_message
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 201, Column: 13 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 202, Column: 13 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 204, Column: 8 }
+Function:        equi_stratum_show_message
+Args:
+  - String:          'load of type '
+  - Type:            i8
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 202, Column: 13 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 208, Column: 13 }
+Function:        equi_stratum_show_message
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 196, Column: 8 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 208, Column: 13 }
+Function:        equi_stratum_show_message
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 202, Column: 13 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 208, Column: 13 }
+Function:        equi_stratum_show_message
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 204, Column: 29 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 208, Column: 13 }
+Function:        equi_stratum_show_message
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 198, Column: 22 }
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 227, Column: 2 }
+Function:        equi_store_work_solution
+Args:
+  - Callee:          bn_store_hash_target_ratio
+  - String:          ' will not be inlined into '
+  - Caller:          equi_store_work_solution
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 224, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 227, Column: 2 }
+Function:        equi_store_work_solution
+Args:
+  - Callee:          bn_store_hash_target_ratio
+  - String:          ' will not be inlined into '
+  - Caller:          equi_store_work_solution
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 224, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 245, Column: 13 }
+Function:        equi_stratum_submit
+Args:
+  - Callee:          bin2hex
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_submit
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 234, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 247, Column: 19 }
+Function:        equi_stratum_submit
+Args:
+  - Callee:          calloc
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_submit
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 234, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 249, Column: 3 }
+Function:        equi_stratum_submit
+Args:
+  - Callee:          applog
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_submit
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 234, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 252, Column: 2 }
+Function:        equi_stratum_submit
+Args:
+  - Callee:          cbin2hex
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_submit
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 234, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 255, Column: 2 }
+Function:        equi_stratum_submit
+Args:
+  - Callee:          sprintf
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_submit
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 234, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 257, Column: 2 }
+Function:        equi_stratum_submit
+Args:
+  - Callee:          snprintf
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_submit
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 234, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 262, Column: 2 }
+Function:        equi_stratum_submit
+Args:
+  - Callee:          free
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_submit
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 234, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 263, Column: 2 }
+Function:        equi_stratum_submit
+Args:
+  - Callee:          free
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_submit
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 234, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 265, Column: 2 }
+Function:        equi_stratum_submit
+Args:
+  - Callee:          gettimeofday
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_submit
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 234, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 267, Column: 6 }
+Function:        equi_stratum_submit
+Args:
+  - Callee:          stratum_send_line
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_submit
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 234, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 268, Column: 3 }
+Function:        equi_stratum_submit
+Args:
+  - Callee:          applog
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_submit
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 234, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 245, Column: 13 }
+Function:        equi_stratum_submit
+Args:
+  - Callee:          bin2hex
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_submit
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 234, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 247, Column: 19 }
+Function:        equi_stratum_submit
+Args:
+  - Callee:          calloc
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_submit
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 234, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 249, Column: 3 }
+Function:        equi_stratum_submit
+Args:
+  - Callee:          applog
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_submit
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 234, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 252, Column: 2 }
+Function:        equi_stratum_submit
+Args:
+  - Callee:          cbin2hex
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_submit
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 234, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 255, Column: 2 }
+Function:        equi_stratum_submit
+Args:
+  - Callee:          sprintf
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_submit
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 234, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 257, Column: 2 }
+Function:        equi_stratum_submit
+Args:
+  - Callee:          snprintf
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_submit
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 234, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 262, Column: 2 }
+Function:        equi_stratum_submit
+Args:
+  - Callee:          free
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_submit
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 234, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 263, Column: 2 }
+Function:        equi_stratum_submit
+Args:
+  - Callee:          free
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_submit
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 234, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 265, Column: 2 }
+Function:        equi_stratum_submit
+Args:
+  - Callee:          gettimeofday
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_submit
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 234, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 267, Column: 6 }
+Function:        equi_stratum_submit
+Args:
+  - Callee:          stratum_send_line
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_submit
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 234, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 268, Column: 3 }
+Function:        equi_stratum_submit
+Args:
+  - Callee:          applog
+  - String:          ' will not be inlined into '
+  - Caller:          equi_stratum_submit
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 234, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 255, Column: 27 }
+Function:        equi_stratum_submit
+Args:
+  - String:          ''''
+  - Callee:          _ZL6swab32j
+  - String:          ''' inlined into '''
+  - Caller:          equi_stratum_submit
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 234, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-15030'
+  - String:          ', threshold='
+  - Threshold:       '487'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          equi_stratum_submit
+  - String:          ':'
+  - Line:            '22'
+  - String:          ':'
+  - Column:          '27'
+  - String:          ';'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 255, Column: 34 }
+Function:        equi_stratum_submit
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 252, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 260, Column: 15 }
+Function:        equi_stratum_submit
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 255, Column: 2 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 272, Column: 22 }
+Function:        equi_stratum_submit
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 267, Column: 6 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 273, Column: 26 }
+Function:        equi_stratum_submit
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 260, Column: 15 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 267, Column: 6 }
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 25, Column: 27 }
+Function:        _Z19target_to_diff_equiPj
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 26, Column: 21 }
+Function:        _Z19target_to_diff_equiPj
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 25, Column: 21 }
+Function:        _Z19target_to_diff_equiPj
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 26, Column: 21 }
+Function:        _Z19target_to_diff_equiPj
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 25, Column: 27 }
+Function:        _Z19target_to_diff_equiPj
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 26, Column: 21 }
+Function:        _Z19target_to_diff_equiPj
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 25, Column: 21 }
+Function:        _Z19target_to_diff_equiPj
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 26, Column: 21 }
+Function:        _Z19target_to_diff_equiPj
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            NonReductionValueUsedOutsideLoop
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 41, Column: 2 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'loop not vectorized: '
+  - String:          value that could not be identified as reduction is used outside the loop
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantComputeNumberOfIterations
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 41, Column: 2 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          'loop not vectorized: '
+  - String:          could not determine number of loop iterations
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 41, Column: 2 }
+Function:        _Z19diff_to_target_equiPjd
+Args:
+  - String:          loop not vectorized
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            HorSLPNotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 26, Column: 13 }
+Function:        equi_network_diff
+Args:
+  - String:          Vectorizing horizontal reduction is possible
+  - String:          'but not beneficial with cost '
+  - Cost:            '5'
+  - String:          ' and threshold '
+  - Threshold:       '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 26, Column: 27 }
+Function:        equi_network_diff
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 26, Column: 27 }
+Function:        equi_network_diff
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 25, Column: 27 }
+Function:        equi_network_diff
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 27, Column: 21 }
+Function:        equi_network_diff
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 67, Column: 19 }
+Function:        equi_network_diff
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 25, Column: 27 }
+Function:        equi_network_diff
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 25, Column: 27 }
+Function:        equi_network_diff
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 26, Column: 13 }
+Function:        equi_network_diff
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 25, Column: 21 }
+Function:        equi_network_diff
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 26, Column: 13 }
+Function:        equi_network_diff
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 26, Column: 13 }
+Function:        equi_network_diff
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 68, Column: 16 }
+Function:        equi_network_diff
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            HorSLPNotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 26, Column: 13 }
+Function:        equi_network_diff
+Args:
+  - String:          Vectorizing horizontal reduction is possible
+  - String:          'but not beneficial with cost '
+  - Cost:            '5'
+  - String:          ' and threshold '
+  - Threshold:       '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 26, Column: 27 }
+Function:        equi_network_diff
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 26, Column: 27 }
+Function:        equi_network_diff
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 25, Column: 27 }
+Function:        equi_network_diff
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 27, Column: 21 }
+Function:        equi_network_diff
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 67, Column: 19 }
+Function:        equi_network_diff
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 25, Column: 27 }
+Function:        equi_network_diff
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 25, Column: 27 }
+Function:        equi_network_diff
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 26, Column: 13 }
+Function:        equi_network_diff
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 25, Column: 21 }
+Function:        equi_network_diff
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 26, Column: 13 }
+Function:        equi_network_diff
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 26, Column: 13 }
+Function:        equi_network_diff
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 68, Column: 16 }
+Function:        equi_network_diff
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            NonReductionValueUsedOutsideLoop
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 99, Column: 2 }
+Function:        equi_stratum_set_target
+Args:
+  - String:          'loop not vectorized: '
+  - String:          value that could not be identified as reduction is used outside the loop
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantComputeNumberOfIterations
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 99, Column: 2 }
+Function:        equi_stratum_set_target
+Args:
+  - String:          'loop not vectorized: '
+  - String:          could not determine number of loop iterations
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 99, Column: 2 }
+Function:        equi_stratum_set_target
+Args:
+  - String:          loop not vectorized
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 25, Column: 27 }
+Function:        equi_stratum_set_target
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 26, Column: 21 }
+Function:        equi_stratum_set_target
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 25, Column: 21 }
+Function:        equi_stratum_set_target
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 26, Column: 21 }
+Function:        equi_stratum_set_target
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 25, Column: 27 }
+Function:        equi_stratum_set_target
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 26, Column: 21 }
+Function:        equi_stratum_set_target
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 25, Column: 21 }
+Function:        equi_stratum_set_target
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 26, Column: 21 }
+Function:        equi_stratum_set_target
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantVectorizeLibcall
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 168, Column: 3 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'loop not vectorized: '
+  - String:          call instruction cannot be vectorized
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            CantComputeNumberOfIterations
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 167, Column: 2 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'loop not vectorized: '
+  - String:          could not determine number of loop iterations
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 167, Column: 2 }
+Function:        equi_stratum_notify
+Args:
+  - String:          loop not vectorized
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 154, Column: 31 }
+Function:        equi_stratum_notify
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            HorSLPNotBeneficial
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 132, Column: 7 }
+Function:        equi_stratum_notify
+Args:
+  - String:          Vectorizing horizontal reduction is possible
+  - String:          'but not beneficial with cost '
+  - Cost:            '3'
+  - String:          ' and threshold '
+  - Threshold:       '0'
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 168, Column: 18 }
+Function:        equi_stratum_notify
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'equi/equi-stratum.cpp', Line: 167, Column: 28 }
+Function:        equi_stratum_notify
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+Function:        equi_stratum_show_message
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...

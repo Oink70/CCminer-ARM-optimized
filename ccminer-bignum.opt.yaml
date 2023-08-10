@@ -1,0 +1,421 @@
+--- !Passed
+Pass:            loop-idiom
+Name:            ProcessLoopStridedStore
+DebugLoc:        { File: './uint256.h', Line: 545, Column: 19 }
+Function:        _ZN7uint256C2Ev
+Args:
+  - String:          'Transformed loop-strided store in '
+  - Function:        _ZN7uint256C2Ev
+    DebugLoc:        { File: './uint256.h', Line: 543, Column: 0 }
+  - String:          ' function into a call to '
+  - NewFunction:     llvm.memset.p0i8.i64
+  - String:          '() intrinsic'
+...
+--- !Passed
+Pass:            loop-delete
+Name:            Invariant
+DebugLoc:        { File: './uint256.h', Line: 544, Column: 9 }
+Function:        _ZN7uint256C2Ev
+Args:
+  - String:          Loop deleted because it is invariant
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            FullyUnrolled
+DebugLoc:        { File: './uint256.h', Line: 63, Column: 9 }
+Function:        _ZNK9base_uintILj256EE9getdoubleEv
+Args:
+  - String:          'completely unrolled loop with '
+  - UnrollCount:     '8'
+  - String:          ' iterations'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: bignum.cpp, Line: 62, Column: 10 }
+Function:        bn_hash_target_ratio
+Args:
+  - String:          ''''
+  - Callee:          _ZN7uint256C2Ev
+    DebugLoc:        { File: './uint256.h', Line: 543, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          bn_hash_target_ratio
+    DebugLoc:        { File: bignum.cpp, Line: 61, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          bn_hash_target_ratio
+  - String:          ':'
+  - Line:            '2'
+  - String:          ':'
+  - Column:          '10'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: bignum.cpp, Line: 62, Column: 13 }
+Function:        bn_hash_target_ratio
+Args:
+  - String:          ''''
+  - Callee:          _ZN7uint256C2Ev
+    DebugLoc:        { File: './uint256.h', Line: 543, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          bn_hash_target_ratio
+    DebugLoc:        { File: bignum.cpp, Line: 61, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-30'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          bn_hash_target_ratio
+  - String:          ':'
+  - Line:            '2'
+  - String:          ':'
+  - Column:          '13'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: bignum.cpp, Line: 71, Column: 12 }
+Function:        bn_hash_target_ratio
+Args:
+  - String:          ''''
+  - Callee:          _ZNK9base_uintILj256EE9getdoubleEv
+    DebugLoc:        { File: './uint256.h', Line: 60, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          bn_hash_target_ratio
+    DebugLoc:        { File: bignum.cpp, Line: 61, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '75'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          bn_hash_target_ratio
+  - String:          ':'
+  - Line:            '11'
+  - String:          ':'
+  - Column:          '12'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: bignum.cpp, Line: 73, Column: 12 }
+Function:        bn_hash_target_ratio
+Args:
+  - String:          ''''
+  - Callee:          _ZNK9base_uintILj256EE9getdoubleEv
+    DebugLoc:        { File: './uint256.h', Line: 60, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          bn_hash_target_ratio
+    DebugLoc:        { File: bignum.cpp, Line: 61, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '75'
+  - String:          ', threshold='
+  - Threshold:       '375'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          bn_hash_target_ratio
+  - String:          ':'
+  - Line:            '13'
+  - String:          ':'
+  - Column:          '12'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: bignum.cpp, Line: 85, Column: 28 }
+Function:        bn_store_hash_target_ratio
+Args:
+  - String:          ''''
+  - Callee:          bn_hash_target_ratio
+    DebugLoc:        { File: bignum.cpp, Line: 61, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          bn_store_hash_target_ratio
+    DebugLoc:        { File: bignum.cpp, Line: 80, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '290'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: bignum.cpp, Line: 86, Column: 33 }
+Function:        bn_store_hash_target_ratio
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: bignum.cpp, Line: 85, Column: 26 }
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: bignum.cpp, Line: 92, Column: 2 }
+Function:        bn_set_target_ratio
+Args:
+  - String:          ''''
+  - Callee:          bn_store_hash_target_ratio
+    DebugLoc:        { File: bignum.cpp, Line: 80, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          bn_set_target_ratio
+    DebugLoc:        { File: bignum.cpp, Line: 91, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '45'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          bn_set_target_ratio
+  - String:          ':'
+  - Line:            '2'
+  - String:          ':'
+  - Column:          '2'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: bignum.cpp, Line: 85, Column: 28 }
+Function:        bn_set_target_ratio
+Args:
+  - String:          ''''
+  - Callee:          bn_hash_target_ratio
+    DebugLoc:        { File: bignum.cpp, Line: 61, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          bn_set_target_ratio
+    DebugLoc:        { File: bignum.cpp, Line: 91, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '290'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: bignum.cpp, Line: 86, Column: 33 }
+Function:        bn_set_target_ratio
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: bignum.cpp, Line: 85, Column: 26 }
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: bignum.cpp, Line: 98, Column: 2 }
+Function:        work_set_target_ratio
+Args:
+  - String:          ''''
+  - Callee:          bn_store_hash_target_ratio
+    DebugLoc:        { File: bignum.cpp, Line: 80, Column: 0 }
+  - String:          ''' inlined into '''
+  - Caller:          work_set_target_ratio
+    DebugLoc:        { File: bignum.cpp, Line: 97, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '45'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          work_set_target_ratio
+  - String:          ':'
+  - Line:            '2'
+  - String:          ':'
+  - Column:          '2'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            TooCostly
+DebugLoc:        { File: bignum.cpp, Line: 85, Column: 28 }
+Function:        work_set_target_ratio
+Args:
+  - String:          ''''
+  - Callee:          bn_hash_target_ratio
+    DebugLoc:        { File: bignum.cpp, Line: 61, Column: 0 }
+  - String:          ''' not inlined into '''
+  - Caller:          work_set_target_ratio
+    DebugLoc:        { File: bignum.cpp, Line: 97, Column: 0 }
+  - String:          ''' because too costly to inline '
+  - String:          '(cost='
+  - Cost:            '290'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: bignum.cpp, Line: 86, Column: 33 }
+Function:        work_set_target_ratio
+Args:
+  - String:          'load of type '
+  - Type:            double
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: bignum.cpp, Line: 85, Column: 26 }
+...
+--- !Passed
+Pass:            slp-vectorizer
+Name:            VectorizedHorizontalReduction
+DebugLoc:        { File: './uint256.h', Line: 64, Column: 25 }
+Function:        bn_hash_target_ratio
+Args:
+  - String:          'Vectorized horizontal reduction with cost '
+  - Cost:            '-1'
+  - String:          ' and with tree size '
+  - TreeSize:        '4'
+...
+--- !Passed
+Pass:            slp-vectorizer
+Name:            VectorizedHorizontalReduction
+DebugLoc:        { File: './uint256.h', Line: 64, Column: 25 }
+Function:        bn_hash_target_ratio
+Args:
+  - String:          'Vectorized horizontal reduction with cost '
+  - Cost:            '-1'
+  - String:          ' and with tree size '
+  - TreeSize:        '4'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: './uint256.h', Line: 64, Column: 25 }
+Function:        bn_hash_target_ratio
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: './uint256.h', Line: 64, Column: 25 }
+Function:        bn_hash_target_ratio
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: './uint256.h', Line: 64, Column: 25 }
+Function:        bn_hash_target_ratio
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: './uint256.h', Line: 64, Column: 25 }
+Function:        bn_hash_target_ratio
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: './uint256.h', Line: 64, Column: 25 }
+Function:        bn_hash_target_ratio
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: './uint256.h', Line: 64, Column: 25 }
+Function:        bn_hash_target_ratio
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: './uint256.h', Line: 64, Column: 25 }
+Function:        bn_hash_target_ratio
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: './uint256.h', Line: 64, Column: 25 }
+Function:        bn_hash_target_ratio
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: './uint256.h', Line: 64, Column: 25 }
+Function:        bn_hash_target_ratio
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: './uint256.h', Line: 64, Column: 25 }
+Function:        bn_hash_target_ratio
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...

@@ -1,0 +1,68 @@
+--- !Missed
+Pass:            loop-distribute
+Name:            NotDistributed
+DebugLoc:        { File: crc32.c, Line: 100, Column: 2 }
+Function:        crc32
+Args:
+  - String:          'loop not distributed: use -Rpass-analysis=loop-distribute for more info'
+...
+--- !Analysis
+Pass:            loop-distribute
+Name:            MemOpsCanBeVectorized
+DebugLoc:        { File: crc32.c, Line: 100, Column: 2 }
+Function:        crc32
+Args:
+  - String:          'loop not distributed: '
+  - String:          memory operations are safe for vectorization
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            NonReductionValueUsedOutsideLoop
+DebugLoc:        { File: crc32.c, Line: 100, Column: 2 }
+Function:        crc32
+Args:
+  - String:          'loop not vectorized: '
+  - String:          value that could not be identified as reduction is used outside the loop
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: crc32.c, Line: 100, Column: 2 }
+Function:        crc32
+Args:
+  - String:          loop not vectorized
+...
+--- !Missed
+Pass:            loop-distribute
+Name:            NotDistributed
+DebugLoc:        { File: crc32.c, Line: 115, Column: 2 }
+Function:        crc32_u32t
+Args:
+  - String:          'loop not distributed: use -Rpass-analysis=loop-distribute for more info'
+...
+--- !Analysis
+Pass:            loop-distribute
+Name:            MemOpsCanBeVectorized
+DebugLoc:        { File: crc32.c, Line: 115, Column: 2 }
+Function:        crc32_u32t
+Args:
+  - String:          'loop not distributed: '
+  - String:          memory operations are safe for vectorization
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            NonReductionValueUsedOutsideLoop
+DebugLoc:        { File: crc32.c, Line: 115, Column: 2 }
+Function:        crc32_u32t
+Args:
+  - String:          'loop not vectorized: '
+  - String:          value that could not be identified as reduction is used outside the loop
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: crc32.c, Line: 115, Column: 2 }
+Function:        crc32_u32t
+Args:
+  - String:          loop not vectorized
+...

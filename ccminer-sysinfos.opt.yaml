@@ -1,0 +1,284 @@
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: sysinfos.cpp, Line: 26, Column: 13 }
+Function:        _ZL13linux_cputempi
+Args:
+  - Callee:          fopen
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL13linux_cputempi
+    DebugLoc:        { File: sysinfos.cpp, Line: 24, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: sysinfos.cpp, Line: 30, Column: 8 }
+Function:        _ZL13linux_cputempi
+Args:
+  - Callee:          fopen
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL13linux_cputempi
+    DebugLoc:        { File: sysinfos.cpp, Line: 24, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: sysinfos.cpp, Line: 35, Column: 6 }
+Function:        _ZL13linux_cputempi
+Args:
+  - Callee:          __isoc99_fscanf
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL13linux_cputempi
+    DebugLoc:        { File: sysinfos.cpp, Line: 24, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: sysinfos.cpp, Line: 38, Column: 2 }
+Function:        _ZL13linux_cputempi
+Args:
+  - Callee:          fclose
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL13linux_cputempi
+    DebugLoc:        { File: sysinfos.cpp, Line: 24, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: sysinfos.cpp, Line: 26, Column: 13 }
+Function:        _ZL13linux_cputempi
+Args:
+  - Callee:          fopen
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL13linux_cputempi
+    DebugLoc:        { File: sysinfos.cpp, Line: 24, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: sysinfos.cpp, Line: 30, Column: 8 }
+Function:        _ZL13linux_cputempi
+Args:
+  - Callee:          fopen
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL13linux_cputempi
+    DebugLoc:        { File: sysinfos.cpp, Line: 24, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: sysinfos.cpp, Line: 35, Column: 6 }
+Function:        _ZL13linux_cputempi
+Args:
+  - Callee:          __isoc99_fscanf
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL13linux_cputempi
+    DebugLoc:        { File: sysinfos.cpp, Line: 24, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: sysinfos.cpp, Line: 38, Column: 2 }
+Function:        _ZL13linux_cputempi
+Args:
+  - Callee:          fclose
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL13linux_cputempi
+    DebugLoc:        { File: sysinfos.cpp, Line: 24, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: sysinfos.cpp, Line: 35, Column: 6 }
+Function:        _ZL13linux_cputempi
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: sysinfos.cpp, Line: 27, Column: 11 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: sysinfos.cpp, Line: 35, Column: 6 }
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: sysinfos.cpp, Line: 78, Column: 17 }
+Function:        _Z8cpu_tempi
+Args:
+  - String:          ''''
+  - Callee:          _ZL13linux_cputempi
+  - String:          ''' inlined into '''
+  - Caller:          _Z8cpu_tempi
+    DebugLoc:        { File: sysinfos.cpp, Line: 74, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-14815'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          cpu_temp
+  - String:          ':'
+  - Line:            '5'
+  - String:          ':'
+  - Column:          '17'
+  - String:          ';'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: sysinfos.cpp, Line: 35, Column: 6 }
+Function:        _Z8cpu_tempi
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: sysinfos.cpp, Line: 27, Column: 11 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: sysinfos.cpp, Line: 35, Column: 6 }
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: sysinfos.cpp, Line: 46, Column: 13 }
+Function:        _ZL13linux_cpufreqi
+Args:
+  - Callee:          fopen
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL13linux_cpufreqi
+    DebugLoc:        { File: sysinfos.cpp, Line: 45, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: sysinfos.cpp, Line: 52, Column: 7 }
+Function:        _ZL13linux_cpufreqi
+Args:
+  - Callee:          __isoc99_fscanf
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL13linux_cpufreqi
+    DebugLoc:        { File: sysinfos.cpp, Line: 45, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: sysinfos.cpp, Line: 55, Column: 2 }
+Function:        _ZL13linux_cpufreqi
+Args:
+  - Callee:          fclose
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL13linux_cpufreqi
+    DebugLoc:        { File: sysinfos.cpp, Line: 45, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: sysinfos.cpp, Line: 46, Column: 13 }
+Function:        _ZL13linux_cpufreqi
+Args:
+  - Callee:          fopen
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL13linux_cpufreqi
+    DebugLoc:        { File: sysinfos.cpp, Line: 45, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: sysinfos.cpp, Line: 52, Column: 7 }
+Function:        _ZL13linux_cpufreqi
+Args:
+  - Callee:          __isoc99_fscanf
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL13linux_cpufreqi
+    DebugLoc:        { File: sysinfos.cpp, Line: 45, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: sysinfos.cpp, Line: 55, Column: 2 }
+Function:        _ZL13linux_cpufreqi
+Args:
+  - Callee:          fclose
+  - String:          ' will not be inlined into '
+  - Caller:          _ZL13linux_cpufreqi
+    DebugLoc:        { File: sysinfos.cpp, Line: 45, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: sysinfos.cpp, Line: 56, Column: 9 }
+Function:        _ZL13linux_cpufreqi
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: sysinfos.cpp, Line: 47, Column: 11 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: sysinfos.cpp, Line: 55, Column: 2 }
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: sysinfos.cpp, Line: 87, Column: 9 }
+Function:        _Z9cpu_clocki
+Args:
+  - String:          ''''
+  - Callee:          _ZL13linux_cpufreqi
+  - String:          ''' inlined into '''
+  - Caller:          _Z9cpu_clocki
+    DebugLoc:        { File: sysinfos.cpp, Line: 83, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-14885'
+  - String:          ', threshold='
+  - Threshold:       '250'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          cpu_clock
+  - String:          ':'
+  - Line:            '5'
+  - String:          ':'
+  - Column:          '9'
+  - String:          ';'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: sysinfos.cpp, Line: 56, Column: 9 }
+Function:        _Z9cpu_clocki
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: sysinfos.cpp, Line: 47, Column: 11 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: sysinfos.cpp, Line: 55, Column: 2 }
+...
