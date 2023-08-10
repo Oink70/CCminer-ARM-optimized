@@ -1,29 +1,18 @@
-# ccminer for ARM (RK3328)
+# ccminer for ARM (cortex-a53)
 
 Based on https://github.com/monkins1010/ccminer/tree/ARM
-
-I recommend using the latest release of Armbian for the Rock64 (https://www.armbian.com/rock64/#kernels-archive-all)
-
-Overclocking:
-With older releases of Armbian, Overclocking is done with the below commands
-```
-sed -i "s/MAX_SPEED=.*/MAX_SPEED=1510000/" /etc/default/cpufrequtils
-service cpufrequtils restart
-```
-But on the latest version you can overclock with `armbian-config`.
-
 
 Git and Build Process:
 ```
 sudo apt-get update
 sudo apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential -y
-sudo apt-get install clang lld -y
-git clone https://github.com/DevTechGames/ccminer-rk3328.git
-cd ccminer-rk3328
+sudo apt-get install -y libllvm-16-ocaml-dev libllvm16 llvm-16 llvm-16-dev llvm-16-doc llvm-16-examples llvm-16-runtime clang-16 clang-tools-16 clang-16-doc libclang-common-16-dev libclang-16-dev libclang1-16 clang-format-16 python3-clang-16 clangd-16 clang-tidy-16 libclang-rt-16-dev libpolly-16-dev libfuzzer-16-dev lldb-16 lld-16 libc++-16-dev libc++abi-16-dev libomp-16-dev libclc-16-dev libunwind-16-dev libmlir-16-dev mlir-16-tools flang-16 libclang-rt-16-dev-wasm32 libclang-rt-16-dev-wasm64 libclang-rt-16-dev-wasm32 libclang-rt-16-dev-wasm64
+git clone https://github.com/Oink70/CCminer-ARM-optimized.git
+cd CCminer-ARM-optimized
 chmod +x build.sh
 chmod +x configure.sh
 chmod +x autogen.sh
-./build.sh
+CXX=clang++ CC=clang build.sh
 ```
 
 Compile on Linux
