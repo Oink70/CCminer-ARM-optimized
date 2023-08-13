@@ -17,7 +17,7 @@ if [[ "$arch" == "aarch64" ]]; then
             cpu_flags="-march=armv8-a+crypto -mfpu=neon-fp-armv8 -mfloat-abi=hard"
             ;;
         "Cortex-A73")
-            cpu_flags="-march=armv8.2-a+crypto-mfpu=neon-fp-armv8 -mfloat-abi=hard"
+            cpu_flags="-march=armv8.2-a+crypto -mfpu=neon-fp-armv8 -mfloat-abi=hard"
             ;;
         "Cortex-A75")
             cpu_flags="-march=armv8.2-a+crypto -mfpu=neon-fp-armv8 -mfloat-abi=hard"
