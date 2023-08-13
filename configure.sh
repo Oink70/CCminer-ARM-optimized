@@ -1,4 +1,3 @@
-# To change the cuda arch, edit Makefile.am and run ./build.sh
 #!/bin/bash
 
 # Get CPU information
@@ -10,19 +9,26 @@ common_flags="-O3 -ffinite-loops -ffast-math -D_REENTRANT -falign-functions=16 -
 
 # Set architecture-specific flags
 if [[ "$arch" == "armv8-a" ]]; then
-    cpu_flags="-march=armv8-a+crypto -mtune=cortex-a53"
-elif [[ "$arch" == "armv7-a" ]]; then
-    cpu_flags="-march=armv7-a -mtune=cortex-a9"
-elif [[ "$arch" == "armv7ve" ]]; then
-    cpu_flags="-march=armv7ve -mtune=cortex-a7"
-elif [[ "$arch" == "armv6zk" ]]; then
-    cpu_flags="-march=armv6zk -mtune=arm1176jzf-s"
-elif [[ "$arch" == "armv6" ]]; then
-    cpu_flags="-march=armv6 -mtune=arm1136j-s"
-# Add more architectures here...
+    case "$features" in
+        *"cortex-a72"*)
+            cpu_flags="-march=armv8-a+crc+crypto -mtune=cortex-a72"
+            ;;
+        *"cortex-a73"*)
+            cpu_flags="-march=armv8-a+crc+crypto -mtune=cortex-a73"
+            ;;
+        *"cortex-a75"*)
+            cpu_flags="-march=armv8.2-a+fp16+fp16fml+fp16fmla+crc+crypto -mtune=cortex-a75"
+            ;;
+        *)
+            # Default to ARMv8-A architecture (Cortex-A53) if unknown
+            echo "Unknown or unsupported architecture: $arch. Defaulting to ARMv8-A."
+            cpu_flags="-march=armv8-a+crypto -mtune=cortex-a53"
+            ;;
+    esac
 else
-    echo "Unsupported architecture: $arch"
-    exit 1
+    # Default to ARMv8-A architecture (Cortex-A53) if unknown
+    echo "Unknown or unsupported architecture: $arch. Defaulting to ARMv8-A."
+    cpu_flags="-march=armv8-a+crypto -mtune=cortex-a53"
 fi
 
 # Set vectorization flags
