@@ -34,11 +34,14 @@ else
     cpu_flags="-march=armv8-a+crypto -mtune=cortex-a53"
 fi
 
+# Mitigation flags
+mitigation_flags="-mindirect-branch=thunk -mindirect-branch-register"
+
 # Set vectorization flags
 vectorization_flags="-Rpass-missed=loop-vectorize -Rpass-analysis=loop-vectorize -mllvm -enable-loop-distribute"
 
 # Combine all flags
-all_flags="$common_flags $cpu_flags $vectorization_flags"
+all_flags="$common_flags $cpu_flags $mitigation_flags $vectorization_flags"
 
 # Configure and build
 ./configure CXXFLAGS="-Wl,-hugetlbfs-align -funroll-loops -finline-functions $all_flags" \
