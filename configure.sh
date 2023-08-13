@@ -10,28 +10,28 @@ common_flags="-O3 -ffinite-loops -ffast-math -D_REENTRANT -falign-functions=16 -
 # Set architecture-specific flags
 if [[ "$arch" == "aarch64" ]]; then
     case "$model_name" in
+        "Cortex-A53")
+            cpu_flags="-march=armv8-a -mfpu=neon-fp-armv8 -mfloat-abi=hard -march=armv8-a+crypto"
+            ;;
         "Cortex-A72")
-            cpu_flags="-march=armv8-a+crc+crypto -mtune=cortex-a72"
+            cpu_flags="-march=armv8-a -mfpu=neon-fp-armv8 -mfloat-abi=hard -march=armv8-a+crypto"
             ;;
         "Cortex-A73")
-            cpu_flags="-march=armv8-a+crc+crypto -mtune=cortex-a73"
+            cpu_flags="-march=armv8.2-a -mfpu=neon-fp-armv8 -mfloat-abi=hard -march=armv8.2-a+crypto"
             ;;
         "Cortex-A75")
-            cpu_flags="-march=armv8.2-a+fp16+fp16fml+fp16fmla+crc+crypto -mtune=cortex-a75"
-            ;;
-        "Cortex-A53")
-            cpu_flags="-march=armv8-a+crypto -mtune=cortex-a53"
+            cpu_flags="-march=armv8.2-a -mfpu=neon-fp-armv8 -mfloat-abi=hard -march=armv8.2-a+crypto"
             ;;
         *)
             # Default to ARMv8-A architecture (Cortex-A53) if unknown
             echo "Unknown or unsupported model: $model_name. Defaulting to ARMv8-A."
-            cpu_flags="-march=armv8-a+crypto -mtune=cortex-a53"
+            cpu_flags="-march=armv8-a -mfpu=neon-fp-armv8 -mfloat-abi=hard -march=armv8-a+crypto"
             ;;
     esac
 else
     # Default to ARMv8-A architecture (Cortex-A53) if unknown
     echo "Unknown or unsupported architecture: $arch. Defaulting to ARMv8-A."
-    cpu_flags="-march=armv8-a+crypto -mtune=cortex-a53"
+    cpu_flags="-march=armv8-a -mfpu=neon-fp-armv8 -mfloat-abi=hard -march=armv8-a+crypto"
 fi
 
 # Mitigation flags
