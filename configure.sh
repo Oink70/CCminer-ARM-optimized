@@ -25,13 +25,13 @@ if [[ "$arch" == "aarch64" ]]; then
         *)
             # Default to ARMv8-A architecture (Cortex-A53) if unknown
             echo "Unknown or unsupported model: $model_name. Defaulting to ARMv8-A."
-            cpu_flags="-march=armv8-a+crypto -mfpu=neon-fp-armv8 -mneon-for-64bits -mfloat-abi=hard -mtune=cortex-a53 -mcpu=cortex-a53+crypto"
+            cpu_flags="-march=armv8-a+crypto -mfpu=neon-fp-armv8 -mneon-for-64bits -mfloat-abi=hard -mtune=cortex-a53,cortex-a72,cortex-a73,cortex-a75"
             ;;
     esac
 else
     # Default to ARMv8-A architecture (Cortex-A53) if unknown
     echo "Unknown or unsupported architecture: $arch. Defaulting to ARMv8-A."
-    cpu_flags="-march=armv8-a+crypto -mfpu=neon-fp-armv8 -mneon-for-64bits -mfloat-abi=hard -mtune=cortex-a53 -mcpu=cortex-a53+crypto"
+    cpu_flags="-march=armv8-a+crypto -mfpu=neon-fp-armv8 -mneon-for-64bits -mfloat-abi=hard -mtune=cortex-a53,cortex-a72,cortex-a73,cortex-a75"
 fi
 
 # Mitigation flags
