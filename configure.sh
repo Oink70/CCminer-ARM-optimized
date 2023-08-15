@@ -11,30 +11,30 @@ common_flags="-O3 -ffinite-loops -ffast-math -D_REENTRANT -falign-functions=16 -
 if [[ "$arch" == "aarch64" ]]; then
     case "$model_name" in
         "Cortex-A53")
-            cpu_flags="-march=armv8-a+crypto -mfpu=neon-fp-armv8 -mneon-for-64bits -mfloat-abi=hard -mtune=cortex-a53"
+            cpu_flags="-march=armv8-a+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=hard -mtune=cortex-a53"
             ;;
         "Cortex-A72")
-            cpu_flags="-march=armv8-a+crypto -mfpu=neon-fp-armv8 -mneon-for-64bits -mfloat-abi=hard -mtune=cortex-a72,cortex-a72.cortex-a35,cortex-a72.cortex-a53"
+            cpu_flags="-march=armv8-a+crypto -mfpu=crypto-neon-fp-armv8 -mtune=cortex-a72,cortex-a72.cortex-a35,cortex-a72.cortex-a53"
             ;;
         "Cortex-A73")
-            cpu_flags="-march=armv8.2-a+crypto -mfpu=neon-fp-armv8 -mneon-for-64bits -mfloat-abi=hard -mtune=cortex-a73,cortex-a73.cortex-a53"
+            cpu_flags="-march=armv8.2-a+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=hard -mtune=cortex-a73,cortex-a73.cortex-a53"
             ;;
         "Cortex-A75")
-            cpu_flags="-march=armv8.2-a+crypto -mfpu=neon-fp-armv8 -mneon-for-64bits -mfloat-abi=hard -mtune=cortex-a75,cortex-a75.cortex-a55"
+            cpu_flags="-march=armv8.2-a+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=hard -mtune=cortex-a75,cortex-a75.cortex-a55"
             ;;
         "Cortex-A76")
-            cpu_flags="-march=armv8.2-a+crypto -mfpu=neon-fp-armv8 -mneon-for-64bits -mfloat-abi=hard -mtune=cortex-a76,cortex-a76.cortex-a55"
+            cpu_flags="-march=armv8.2-a+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=hard -mtune=cortex-a76,cortex-a76.cortex-a55"
             ;;
         *)
             # Default to ARMv8-A architecture (Cortex-A53) if unknown
             echo "Unknown or unsupported model: $model_name. Defaulting to ARMv8-A."
-            cpu_flags="-march=armv8-a+crypto -mfpu=neon-fp-armv8 -mneon-for-64bits -mfloat-abi=hard -mtune=cortex-a53,cortex-a72,cortex-a73,cortex-a75,arm8,arm9,cortex-a72.cortex-a53,cortex-a72.cortex-a35,cortex-a73.cortex-a53,cortex-a75.cortex-a55,cortex-a76.cortex-a55"
+            cpu_flags="-march=armv8-a+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=hard -mtune=cortex-a53,cortex-a72,cortex-a73,cortex-a75,arm8,arm9,cortex-a72.cortex-a53,cortex-a72.cortex-a35,cortex-a73.cortex-a53,cortex-a75.cortex-a55,cortex-a76.cortex-a55"
             ;;
     esac
 else
     # Default to ARMv8-A architecture (Cortex-A53) if unknown
     echo "Unknown or unsupported architecture: $arch. Defaulting to ARMv8-A."
-    cpu_flags="-march=armv8-a+crypto -mfpu=neon-fp-armv8 -mneon-for-64bits -mfloat-abi=hard -mtune=cortex-a53,cortex-a72,cortex-a73,cortex-a75,arm8,arm9,cortex-a72.cortex-a53,cortex-a72.cortex-a35,cortex-a73.cortex-a53,cortex-a75.cortex-a55,cortex-a76.cortex-a55"
+    cpu_flags="-march=armv8-a+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=hard -mtune=cortex-a53,cortex-a72,cortex-a73,cortex-a75,arm8,arm9,cortex-a72.cortex-a53,cortex-a72.cortex-a35,cortex-a73.cortex-a53,cortex-a75.cortex-a55,cortex-a76.cortex-a55"
 fi
 
 # Mitigation flags
