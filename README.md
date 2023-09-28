@@ -1,4 +1,4 @@
-# ccminer for ARM (cortex-a53)
+# ccminer for ARM (cortex-a53/a73)
 
 Based on https://github.com/monkins1010/ccminer/tree/ARM
 
